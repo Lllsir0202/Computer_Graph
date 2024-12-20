@@ -4,7 +4,7 @@
 
 #include "Shader.hpp"
 
-namespace SimplePathTracer
+namespace PhotonMap
 {
     class Conductor : public Shader
     {
