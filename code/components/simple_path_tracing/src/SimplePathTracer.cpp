@@ -126,7 +126,17 @@ namespace SimplePathTracer
              * atteunation  - BRDF
              * pdf          - p(w)
              **/
-            return emitted + attenuation * next * n_dot_in / pdf;
+
+            RGB refrac_res{ 0.0f,0.0f,0.0f };
+            if (scattered.has_refraction && currDepth <= 2) 
+            {
+                auto refraction_ray = scattered.r_ray;
+                auto refraction_next = trace(refraction_ray, currDepth + 1);
+                float r_n_dot_in = glm::dot(hitObject->normal, refraction_ray.direction);
+                refrac_res += refraction_next * abs(r_n_dot_in) * scattered.r_attenuation / scattered.r_pdf;
+            }
+
+            return emitted + attenuation * next * n_dot_in / pdf + refrac_res;
         }
         // 
         else if (t != FLOAT_INF) {
