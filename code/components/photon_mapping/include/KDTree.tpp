@@ -132,6 +132,26 @@ namespace PhotonMapping
     }
 
     template <typename Point, int K>
+    template <typename Target>
+    void KDTree<Point, K>::searchWithinRadius(
+        const Node* node, const Target& target, float r, std::vector<Point>& result) const
+    {
+        if (!node) return;
+
+        float dist = distance(node->point, target);
+        if (dist <= r) { result.emplace_back(node->point); }
+
+        int         axis = node->axis;
+        float       diff = target[axis] - node->point[axis];
+        const Node* near = diff < 0 ? node->left : node->right;
+        const Node* far = diff < 0 ? node->right : node->left;
+
+        searchWithinRadius(near, target, r, result);
+
+        if (std::abs(diff) <= r) { searchWithinRadius(far, target, r, result); }
+    }
+
+    template <typename Point, int K>
     void KDTree<Point, K>::insert(const Point& point)
     {
         if (!root)
@@ -158,6 +178,15 @@ namespace PhotonMapping
             heap.pop();
         }
         std::reverse(result.begin(), result.end());
+        return result;
+    }
+
+    template <typename Point, int K>
+    template <typename Target>
+    std::vector<Point> KDTree<Point, K>::withinRadius(const Target& target, float r) const
+    {
+        std::vector<Point> result;
+        searchWithinRadius(root, target, r, result);
         return result;
     }
 

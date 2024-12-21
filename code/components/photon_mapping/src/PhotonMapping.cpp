@@ -136,7 +136,7 @@ namespace PhotonMapping
         auto start_kdtree = std::chrono::high_resolution_clock::now();
         for (const auto& q : query_points)
         {
-            kdtree_results.emplace_back(kdtree->kNearest(q, k));
+            kdtree_results.emplace_back(kdtree->withinRadius(q, k));
         }
         auto end_kdtree = std::chrono::high_resolution_clock::now();
         chrono::duration<double> kdtree_duration = end_kdtree - start_kdtree;
