@@ -209,7 +209,7 @@ namespace PhotonMapping
     }
 
     RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth) {
-        cout << currDepth << endl;
+        //cout << currDepth << endl;
         if (currDepth == depth) return scene.ambient.constant;
         auto hitObject = closestHitObject(r);
         auto [ t, emitted ] = closestHitLight(r);
@@ -325,8 +325,9 @@ namespace PhotonMapping
         // 所以使用亮度不太合适了
         // 这里考虑结合法线角度和路径长度来作为依据
         // 再加上一个depth / maxdepth
-        auto ndoti = glm::dot(hitrecord->normal, r.direction);
-        float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
+        //auto ndoti = glm::dot(hitrecord->normal, r.direction);
+        //float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
+        float p = 0.8;
         //cout << p << endl;
         // 接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0) // 表示漫反射
@@ -390,8 +391,11 @@ namespace PhotonMapping
     {
         RGB IndirectPower = { 0.f,0.f,0.f };
         const auto& Scatter = shaderPrograms[Hit->material.index()]->shade(r, Hit->hitPoint, Hit->normal);
-        int num = 100;
-        const auto& photons = kdtree->kNearest(Hit->hitPoint, num);
+        float radius = 10.0;
+        //const auto& photons = kdtree->withinRadius(Hit->hitPoint, radius);
+        const auto& photons = kdtree->kNearest(Hit->hitPoint, radius);
+
+        cout << photons.size() << endl;
         for (auto& photon : photons)
         {
             // 首先计算光子位置到Hitpoint的方向向量
