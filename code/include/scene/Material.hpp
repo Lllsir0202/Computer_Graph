@@ -94,7 +94,9 @@ namespace NRenderer
         Material() = default;
 
     public:
-        
+        // 0    ->      漫反射
+        // 2    ->      电介质(既有反射也有折射)
+        // 3    ->      导体(镜面)
         unsigned int type = 0;
 
         vector<Property> properties;
