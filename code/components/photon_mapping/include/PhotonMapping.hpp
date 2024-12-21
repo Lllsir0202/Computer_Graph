@@ -11,12 +11,20 @@
 
 // 引入光子
 #include "Photon.hpp"
+// 引入KDTree
+#include "KDTree.hpp"
 
 #include <tuple>
 namespace PhotonMapping
 {
     using namespace NRenderer;
     using namespace std;
+
+    struct DirectLightingRes
+    {
+        Vec3 radiance;
+        float pdf;
+    };
 
     class PhotonMappingRenderer
     {
@@ -36,6 +44,12 @@ namespace PhotonMapping
         // 用vector先存储记录光子
         vector<photon> Photons;
 
+        // 记录下迭代次数 maybe unused
+        unsigned int photoniters;
+        // 模板初始化方式有点固定，但不太想多改动
+        // 因此收集到光子后再初始化kdtree
+        KDTree<photon>* kdtree;
+
         using SCam = PhotonMapping::Camera;
         SCam camera;
 
@@ -53,8 +67,14 @@ namespace PhotonMapping
 
             // 添加光子数目
             photonnum = scene.renderOption.photonnum;
+            photoniters = scene.renderOption.photoniters;
+
+            kdtree = nullptr;
         }
-        ~PhotonMappingRenderer() = default;
+        ~PhotonMappingRenderer()
+        {
+            if (kdtree) delete kdtree;
+        }
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
         RenderResult render();
@@ -73,6 +93,13 @@ namespace PhotonMapping
 
         // 添加光子追踪
         void TracePhoton(const Ray& r, const RGB& power, unsigned depth);
+
+        // 用于估计光子提供的间接光照强度
+        // 根据传入的hitpoint，查询到一定范围内的光子，并返回间接光照强度
+        RGB EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit);
+
+        tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
+        DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
     };
 }
 

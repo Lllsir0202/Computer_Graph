@@ -21,6 +21,17 @@ namespace PhotonMapping
 		/*photon(Vec3 POS) :position(POS) {};
 		photon() {};*/
 		photon(Vec3 POS, RGB POW, Ray In, Ray Out) : position(POS), power(POW), input(In), output(Out) {};
+		const auto& GetPosition(){ return position; }
+		const auto& GetPosition() const { return position; }
+		const auto& GetPower() { return power; }
+		const auto& GetPower() const { return power; }
+		const auto& GetInput() { return input; }
+		const auto& GetInput() const { return input; }
+		const auto& GetOutput() { return output; }
+		const auto& GetOutput() const { return output; }
+	public:
+		float operator[](int index) const { return position[index]; }
+		float& operator[](int index) { return position[index]; }
 	};
 }
 
