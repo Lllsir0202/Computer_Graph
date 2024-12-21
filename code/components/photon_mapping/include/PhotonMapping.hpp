@@ -11,6 +11,8 @@
 
 // 引入光子
 #include "Photon.hpp"
+// 引入KDTree
+#include "KDTree.hpp"
 
 #include <tuple>
 namespace PhotonMapping
@@ -35,6 +37,9 @@ namespace PhotonMapping
 
         // 用vector先存储记录光子
         vector<photon> Photons;
+        // 模板初始化方式有点固定，但不太想多改动
+        // 因此收集到光子后再初始化kdtree
+        KDTree<photon>* kdtree;
 
         using SCam = PhotonMapping::Camera;
         SCam camera;
@@ -53,8 +58,13 @@ namespace PhotonMapping
 
             // 添加光子数目
             photonnum = scene.renderOption.photonnum;
+
+            kdtree = nullptr;
         }
-        ~PhotonMappingRenderer() = default;
+        ~PhotonMappingRenderer()
+        {
+            if (kdtree) delete kdtree;
+        }
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
         RenderResult render();
