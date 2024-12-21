@@ -28,6 +28,20 @@ namespace PhotonMapping
         return area.position + r1 * area.u + r2 * area.v;
     }
 
+    // 用于俄罗斯轮盘赌决定是否继续发射
+    static bool Russian_Roulette(const float p)
+    {
+        // 生成随机数
+        static thread_local std::mt19937 rng(std::random_device{}());
+
+        // 生成0-1的随机数
+        std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+
+        // 生成随机数
+        float rand = dist(rng);
+        return rand > p;
+    }
+
     RGB PhotonMappingRenderer::gamma(const RGB& rgb) {
         return glm::sqrt(rgb);
     }
@@ -209,7 +223,7 @@ namespace PhotonMapping
             return;
         }
 
-        // 找到最近的hitobject
+        // 找到最近的hitobject   ->  后续可以改进对是否命中的判断，添加包围
         HitRecord hitrecord = closestHitObject(r);
         // 如果没有hit，那么返回
         if (!hitrecord)
@@ -225,10 +239,65 @@ namespace PhotonMapping
         // 得到打在hitobject上后的光线
         const auto& scatter = shaderPrograms[material.index()]->shade(r, hitpoint, normal);
 
+
+        // 使用亮度作为轮盘赌的参数
+        float L = 0.2126 * power.r + 0.7152 * power.g + 0.0722 * power.b;
+
         // 接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0) // 表示漫反射
         {
+            // 漫反射需要记录光子
+            photon Photon(hitpoint,power, r, scatter.ray);
+            Photons.push_back(Photon);
+
+            // 根据轮盘赌策略计算是否继续
+            if (Russian_Roulette(L))
+            {
+                // 计算新的ray和power
+                // 漫反射的光强与表面法线相关
+                auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
+                RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * L);
+                TracePhoton(scatter.ray, newpower, depth + 1);
+            }
         }
+
+        // 如果是镜面的话，那么只有反射没有散射
+        if (spScene->materials[material.index()].type == 2) // 表示镜面反射(即导体)
+        {
+            if (Russian_Roulette(L))
+            {
+                // 同样的计算新的ray和power
+                RGB newpower = power * scatter.attenuation / (scatter.pdf * L);
+
+                // 对于导体来说，应该是需要计算反射方向的
+                // glm提供了直接计算反射的()
+                Vec3 reflectDir = glm::reflect(r.direction, hitrecord->normal);
+                Ray reflectRay(hitpoint, reflectDir);
+                TracePhoton(reflectRay, newpower, depth + 1);
+            }
+        }
+
+        // 如果是电介质的话，可能会同时存在折射和散射
+        if (spScene->materials[material.index()].type == 3)  // 表示电介质
+        {
+            // 采用俄罗斯轮盘赌决定处理散射还是折射
+            if (Russian_Roulette(L))
+            {
+                // 处理折射
+                RGB newpower = power * scatter.r_attenuation / scatter.r_pdf;
+
+                TracePhoton(scatter.r_ray, newpower, depth + 1);
+            }
+            else
+            {
+                // 处理反射
+                RGB newpower = power * scatter.attenuation / scatter.pdf;
+
+                TracePhoton(scatter.ray, newpower, depth + 1);
+            }
+        }
+
+        getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
     }
 }
 
