@@ -11,6 +11,8 @@
 
 // 引入光子
 #include "Photon.hpp"
+// 引入KDTree
+#include "KDTree.hpp"
 
 #include <tuple>
 namespace PhotonMapping
@@ -38,6 +40,9 @@ namespace PhotonMapping
 
         // 记录下迭代次数 maybe unused
         unsigned int photoniters;
+        // 模板初始化方式有点固定，但不太想多改动
+        // 因此收集到光子后再初始化kdtree
+        KDTree<photon>* kdtree;
 
         using SCam = PhotonMapping::Camera;
         SCam camera;
@@ -57,8 +62,13 @@ namespace PhotonMapping
             // 添加光子数目
             photonnum = scene.renderOption.photonnum;
             photoniters = scene.renderOption.photoniters;
+
+            kdtree = nullptr;
         }
-        ~PhotonMappingRenderer() = default;
+        ~PhotonMappingRenderer()
+        {
+            if (kdtree) delete kdtree;
+        }
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
         RenderResult render();

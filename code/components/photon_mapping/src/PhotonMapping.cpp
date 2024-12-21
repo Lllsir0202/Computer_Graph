@@ -9,6 +9,7 @@
 #include "Onb.hpp"
 
 #include <random>
+#include <chrono>
 
 namespace PhotonMapping
 {
@@ -18,7 +19,8 @@ namespace PhotonMapping
         static thread_local std::mt19937 rng(std::random_device{}());
 
         // 生成0-1的随机数
-        std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+        // 此处可设为static
+        static std::uniform_real_distribution<float> dist(0.0f, 1.0f);
 
         float r1 = dist(rng);
         float r2 = dist(rng);
@@ -35,7 +37,8 @@ namespace PhotonMapping
         static thread_local std::mt19937 rng(std::random_device{}());
 
         // 生成0-1的随机数
-        std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+        // 此处可设为static
+        static std::uniform_real_distribution<float> dist(0.0f, 1.0f);
 
         // 生成随机数
         float rand = dist(rng);
@@ -94,12 +97,63 @@ namespace PhotonMapping
             t[i].join();
         }
         getServer().logger.log("Done...");
+
+        /*
+        getServer().logger.log("Test kd-tree");
+
+        mt19937 rng(42);
+        uniform_real_distribution<float> dist(-1000.0f, 1000.0f);
+
+        size_t num_photons = 1000000;
+        vector<photon> photons;
+        photons.reserve(num_photons);
+        for (size_t i = 0; i < num_photons; ++i)
+        {
+            Vec3 pos(dist(rng), dist(rng), dist(rng));
+            photons.emplace_back(pos, Vec3(0.f, 0.f, 0.f), Ray(), Ray());
+        }
+
+        auto start_build = chrono::high_resolution_clock::now();
+        kdtree = new KDTree<photon, 3>(photons.begin(), photons.end());
+        auto end_build = chrono::high_resolution_clock::now();
+        chrono::duration<double> build_duration = end_build - start_build;
+        getServer().logger.log("KDTree built in " + to_string(build_duration.count()) + " seconds.\n");
+
+        size_t num_queries = 1000;
+        int k = 10;
+
+        vector<photon> query_points;
+        query_points.reserve(num_queries);
+        for (size_t i = 0; i < num_queries; ++i)
+        {
+            Vec3 q_pos(dist(rng), dist(rng), dist(rng));
+            query_points.emplace_back(photon(q_pos, Vec3(0.f, 0.f, 0.f), Ray(), Ray()));
+        }
+
+        vector<vector<photon>> kdtree_results;
+        kdtree_results.reserve(num_queries);
+
+        auto start_kdtree = std::chrono::high_resolution_clock::now();
+        for (const auto& q : query_points)
+        {
+            kdtree_results.emplace_back(kdtree->kNearest(q, k));
+        }
+        auto end_kdtree = std::chrono::high_resolution_clock::now();
+        chrono::duration<double> kdtree_duration = end_kdtree - start_kdtree;
+        getServer().logger.log("KDTree query done in " + to_string(kdtree_duration.count()) + " seconds.\n");
+        */
+
         return {pixels, width, height};
     }
 
     void PhotonMappingRenderer::release(const RenderResult& r) {
         auto [p, w, h] = r;
         delete[] p;
+        if (kdtree)
+        {
+            delete kdtree;
+            kdtree = nullptr;
+        }
     }
 
     HitRecord PhotonMappingRenderer::closestHitObject(const Ray& r) {
@@ -218,6 +272,9 @@ namespace PhotonMapping
                 TracePhoton(r, Power, 0);
             }
         }
+
+        // 接下来建立kdtree，并测试正确性
+        // kdtree = new KDTree<photon, 3>(Photons.begin(), Photons.end());
     }
 
     // 用于追踪随机发射的光子
