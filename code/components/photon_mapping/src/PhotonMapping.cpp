@@ -11,6 +11,16 @@
 #include <random>
 #include <chrono>
 
+namespace
+{
+    static float random_double()
+    {
+        static thread_local std::mt19937 rng(std::random_device{}());
+        static std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+        return dist(rng);
+    }
+}
+
 namespace PhotonMapping
 {
     static Vec3 RandomPhotonPositionGenerater(const AreaLight& area)
@@ -208,13 +218,16 @@ namespace PhotonMapping
         return { closest->t, v };
     }
 
-    RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth) {
+    RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth) 
+    {
         //cout << currDepth << endl;
         if (currDepth == depth) return scene.ambient.constant;
         auto hitObject = closestHitObject(r);
         auto [ t, emitted ] = closestHitLight(r);
         // hit object
-        if (hitObject && hitObject->t < t) {
+
+        if (hitObject && hitObject->t < t) 
+        {
             auto mtlHandle = hitObject->material;
             auto scattered = shaderPrograms[mtlHandle.index()]->shade(r, hitObject->hitPoint, hitObject->normal);
             auto scatteredRay = scattered.ray;
@@ -231,63 +244,70 @@ namespace PhotonMapping
              * pdf          - p(w)
              **/
 
-            RGB refrac_res{ 0.0f,0.0f,0.0f };
-            if (scattered.has_refraction && currDepth <= 2) 
+            Vec3 directLighting(0.0f);
+            for (const auto& light : scene.areaLightBuffer) 
             {
-                auto refraction_ray = scattered.r_ray;
-                auto refraction_next = trace(refraction_ray, currDepth + 1);
-                float r_n_dot_in = glm::dot(hitObject->normal, refraction_ray.direction);
-                refrac_res += refraction_next * abs(r_n_dot_in) * scattered.r_attenuation / scattered.r_pdf;
+                auto [radiance, pdf] = sampleDirectLighting(hitObject, light);
+                directLighting += scattered.attenuation * radiance;
             }
-            RGB IndirectPow = EstimateIndirectRadiance(r, hitObject);
-            return emitted + attenuation * next * n_dot_in / pdf + refrac_res + IndirectPow;
+
+            RGB indirectLighting(0.0f);
+            const float P_RR = 0.8f;
+            static const int k = 50;
+            if (random_double() < P_RR) 
+            {
+                auto nearPhotons = kdtree->kNearest(hitObject->hitPoint, k);
+
+                if (!nearPhotons.empty()) 
+                {
+                    float maxDist = 0.0f;
+                    for (const auto& photon : nearPhotons)
+                        maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
+
+                    for (const auto& photon : nearPhotons) 
+                    {
+                        float dist = glm::distance(photon.GetPosition(), hitObject->hitPoint);
+                        float weight = 1.0f - (dist * dist) / (maxDist * maxDist);
+
+                        float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
+                        if (cos_theta <= 0.0f) continue;
+                        indirectLighting += photon.GetPower() * weight * scattered.attenuation * cos_theta / (PI * maxDist * maxDist);
+                    }
+                    indirectLighting /= P_RR;
+                }
+            }
+
+            return scattered.emitted + directLighting + indirectLighting;
         }
-        // 
-        else if (t != FLOAT_INF) {
+        else if (t != FLOAT_INF) 
+        {
             return emitted;
         }
-        else {
-            return Vec3{0};
-        }
+        return Vec3(0.0f);
     }
 
-    void PhotonMappingRenderer::RandomPhoton()
+    void PhotonMappingRenderer::RandomPhoton() 
     {
         getServer().logger.log("Start to Random Shoot Photon...");
-        // 接下来处理采样，首先对于随机的光子数目，产生随机位置和方向
-        for (int i = 0; i < photonnum; i++)
+
+        const float P_RR = 0.8f;
+        for (int i = 0; i < photonnum; ++i) 
         {
-            for (auto& area : scene.areaLightBuffer)
+            for (auto& area : scene.areaLightBuffer) 
             {
-                // 得到面光源表面的随机位置
                 Vec3 Position = RandomPhotonPositionGenerater(area);
-
-                // 接下来需要计算面光源发出光线的随机方向
-                // 这里先使用实现好的半球，后面考虑重新实现一个余弦加权随机
                 Vec3 Local_dir = defaultSamplerInstance<HemiSphere>().sample3d();
+                Vec3 World_dir = glm::normalize(Onb(glm::normalize(glm::cross(area.u, area.v))).local(Local_dir));
 
-                // 转换之前我们需要知道面光源的法向量
-                Vec3 AreaLight_normal = glm::normalize(glm::cross(area.u, area.v));
-                Vec3 World_dir = glm::normalize(Onb(AreaLight_normal).local(Local_dir));
-                
-                // 得到光强
-                // 首先计算光源面积
-                float AreaLight_Area = glm::length(glm::cross(area.u, area.v));
-                // 由于我们需要计算的是
-                // 由于面光源的radiance是光源在单位立体角和单位面积上的发射功率
-                // 所以我们还需要再除以一个PI
-                RGB Power = (area.radiance * AreaLight_Area) / ((static_cast<float>(photonnum) * PI));
+                float area_size = glm::length(glm::cross(area.u, area.v));
+                RGB Power = (area.radiance * area_size) / (static_cast<float>(photonnum) * PI);
 
-                // 得到光
                 Ray r(Position, World_dir);
-
-                // 接下来对光子进行追踪
                 TracePhoton(r, Power, 0);
             }
         }
 
-        // 接下来建立kdtree，并测试正确性
-        // kdtree = new KDTree<photon, 3>(Photons.begin(), Photons.end());
+        getServer().logger.log("Photon mapping complete. Total photons: " + std::to_string(Photons.size()));
     }
 
     // 用于追踪随机发射的光子
@@ -414,5 +434,38 @@ namespace PhotonMapping
         }
         return IndirectPower;
     }
-}
 
+    tuple<Vec3, Vec3> PhotonMappingRenderer::sampleOnLight(const AreaLight& light_source)
+    {
+        const Vec3& light_pos = light_source.position;
+        const Vec3& light_u = light_source.u;
+        const Vec3& light_v = light_source.v;
+
+        Vec3 light_normal = glm::normalize(glm::cross(light_u, light_v));
+        Vec3 sample_point = light_pos + light_u * random_double() + light_v * random_double();
+
+        return { sample_point, light_normal };
+    }
+
+    DirectLightingRes PhotonMappingRenderer::sampleDirectLighting(const HitRecord& hit_record, const AreaLight& light_source)
+    {
+        auto [sample_point, light_normal] = sampleOnLight(light_source);
+
+        Vec3 shadow_ray_dir = glm::normalize(sample_point - hit_record->hitPoint);
+        Ray shadow_ray{ hit_record->hitPoint, shadow_ray_dir };
+
+        float dist_to_light = glm::length(sample_point - hit_record->hitPoint);
+        float cos_theta = glm::dot(-shadow_ray_dir, light_normal);
+        float pdf_light = 1.0f / (glm::length(light_source.u) * glm::length(light_source.v));
+
+        auto shadow_hit = closestHitObject(shadow_ray);
+        if (shadow_hit && shadow_hit->t < dist_to_light || cos_theta < 0.0001f)
+            return { Vec3(0.0f), pdf_light };
+
+        float surface_cos = glm::dot(hit_record->normal, shadow_ray_dir);
+        Vec3 radiance = light_source.radiance * surface_cos * cos_theta /
+            (dist_to_light * dist_to_light * pdf_light);
+
+        return { radiance, pdf_light };
+    }
+}
