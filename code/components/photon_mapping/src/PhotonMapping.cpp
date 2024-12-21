@@ -73,15 +73,16 @@ namespace PhotonMapping
         for (auto& m : scene.materials) {
             shaderPrograms.push_back(shaderCreator.create(m, scene.textures));
         }
-
+        RandomPhoton();
+        getServer().logger.log("Finish Random Emit photons...");
         RGBA* pixels = new RGBA[width*height]{};
 
         // 局部坐标转换成世界坐标
         VertexTransformer vertexTransformer{};
         vertexTransformer.exec(spScene);
 
-        getServer().logger.log("Current photon num is " + to_string(this->photonnum) + "\n");
-        getServer().logger.log("Current width is " + to_string(this->width) + "\n");
+        /*getServer().logger.log("Current photon num is " + to_string(this->photonnum) + "\n");
+        getServer().logger.log("Current width is " + to_string(this->width) + "\n");*/
 
         const auto taskNums = 8;
         thread t[taskNums];
@@ -206,7 +207,9 @@ namespace PhotonMapping
                 // 首先计算光源面积
                 float AreaLight_Area = glm::length(glm::cross(area.u, area.v));
                 // 由于我们需要计算的是
-                RGB Power = (area.radiance * AreaLight_Area) / (static_cast<float>(photonnum));
+                // 由于面光源的radiance是光源在单位立体角和单位面积上的发射功率
+                // 所以我们还需要再除以一个PI
+                RGB Power = (area.radiance * AreaLight_Area) / ((static_cast<float>(photonnum) * PI));
 
                 // 得到光
                 Ray r(Position, World_dir);
@@ -244,7 +247,13 @@ namespace PhotonMapping
 
 
         // 使用亮度作为轮盘赌的参数
-        float L = 0.2126 * power.r + 0.7152 * power.g + 0.0722 * power.b;
+        //float L = 0.2126 * power.r + 0.7152 * power.g + 0.0722 * power.b;
+        // 不知道为何，这里的RGB并不是0-1(?)
+        // 所以使用亮度不太合适了
+        // 这里考虑结合法线角度和路径长度来作为依据
+        // 再加上一个depth / maxdepth
+        auto ndoti = glm::dot(hitrecord->normal, r.direction);
+        float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0); // -0.5 * static_cast<float>(depth) / this->depth;
 
         // 接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0) // 表示漫反射
@@ -254,12 +263,12 @@ namespace PhotonMapping
             Photons.push_back(Photon);
 
             // 根据轮盘赌策略计算是否继续
-            if (Russian_Roulette(L))
+            if (Russian_Roulette(p))
             {
                 // 计算新的ray和power
                 // 漫反射的光强与表面法线相关
                 auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
-                RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * L);
+                RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * p);
                 TracePhoton(scatter.ray, newpower, depth + 1);
             }
         }
@@ -267,10 +276,10 @@ namespace PhotonMapping
         // 如果是镜面的话，那么只有反射没有散射
         if (spScene->materials[material.index()].type == 2) // 表示镜面反射(即导体)
         {
-            if (Russian_Roulette(L))
+            if (Russian_Roulette(p))
             {
                 // 同样的计算新的ray和power
-                RGB newpower = power * scatter.attenuation / (scatter.pdf * L);
+                RGB newpower = power * scatter.attenuation / (scatter.pdf * p);
 
                 // 对于导体来说，应该是需要计算反射方向的
                 // glm提供了直接计算反射的()
@@ -284,7 +293,7 @@ namespace PhotonMapping
         if (spScene->materials[material.index()].type == 3)  // 表示电介质
         {
             // 采用俄罗斯轮盘赌决定处理散射还是折射
-            if (Russian_Roulette(L))
+            if (Russian_Roulette(p))
             {
                 // 处理折射
                 RGB newpower = power * scatter.r_attenuation / scatter.r_pdf;
@@ -301,6 +310,12 @@ namespace PhotonMapping
         }
 
         getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
+    }
+
+    // 用于计算hitpoint提供的间接光强
+    RGB PhotonMappingRenderer::EstimateIndirectRadiance(const HitRecord& Hit)
+    {
+        return RGB();
     }
 }
 
