@@ -98,13 +98,13 @@ namespace PhotonMapping
         }
         getServer().logger.log("Done...");
 
-        /*
+        
         getServer().logger.log("Test kd-tree");
 
         mt19937 rng(42);
         uniform_real_distribution<float> dist(-1000.0f, 1000.0f);
 
-        size_t num_photons = 1000000;
+        size_t num_photons = 100000;
         vector<photon> photons;
         photons.reserve(num_photons);
         for (size_t i = 0; i < num_photons; ++i)
@@ -122,12 +122,12 @@ namespace PhotonMapping
         size_t num_queries = 1000;
         int k = 10;
 
-        vector<photon> query_points;
+        vector<Vec3> query_points;
         query_points.reserve(num_queries);
         for (size_t i = 0; i < num_queries; ++i)
         {
             Vec3 q_pos(dist(rng), dist(rng), dist(rng));
-            query_points.emplace_back(photon(q_pos, Vec3(0.f, 0.f, 0.f), Ray(), Ray()));
+            query_points.emplace_back(q_pos);
         }
 
         vector<vector<photon>> kdtree_results;
@@ -141,7 +141,7 @@ namespace PhotonMapping
         auto end_kdtree = std::chrono::high_resolution_clock::now();
         chrono::duration<double> kdtree_duration = end_kdtree - start_kdtree;
         getServer().logger.log("KDTree query done in " + to_string(kdtree_duration.count()) + " seconds.\n");
-        */
+        
 
         return {pixels, width, height};
     }

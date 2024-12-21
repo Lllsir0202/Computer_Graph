@@ -12,7 +12,8 @@ namespace PhotonMapping
     }
 
     template <typename Point, int K>
-    float KDTree<Point, K>::distance(const Point& a, const Point& b) const
+    template <typename Target>
+    float KDTree<Point, K>::distance(const Point& a, const Target& b) const
     {
         float dist_sq = 0.0f;
         for (int i = 0; i < K; ++i)
@@ -105,14 +106,14 @@ namespace PhotonMapping
     }
 
     template <typename Point, int K>
+    template <typename Target>
     void KDTree<Point, K>::searchKNearest(
-        const Node* node, const Point& target, int k, std::priority_queue<HeapItem>& heap) const
+        const Node* node, const Target& target, int k, std::priority_queue<HeapItem>& heap) const
     {
         if (!node) return;
 
         float dist = distance(node->point, target);
-        if (heap.size() < static_cast<size_t>(k))
-            heap.push(HeapItem{ dist, node->point });
+        if (heap.size() < static_cast<size_t>(k)) heap.push(HeapItem{ dist, node->point });
         else if (dist < heap.top().distance)
         {
             heap.pop();
@@ -143,7 +144,8 @@ namespace PhotonMapping
     }
 
     template <typename Point, int K>
-    std::vector<Point> KDTree<Point, K>::kNearest(const Point& target, int k) const
+    template <typename Target>
+    std::vector<Point> KDTree<Point, K>::kNearest(const Target& target, int k) const
     {
         std::priority_queue<HeapItem> heap;
         searchKNearest(root, target, k, heap);
