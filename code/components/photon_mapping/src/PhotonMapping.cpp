@@ -78,6 +78,18 @@ namespace PhotonMapping
         }
         RandomPhoton();
         getServer().logger.log("Finish Random Emit photons...");
+
+        // 建立kdtree
+        getServer().logger.log("Start to build KD_tree...");
+        cout << "Start to build KD_tree..." << endl;
+
+
+        kdtree = new KDTree<photon>(Photons.begin(), Photons.end());
+
+        // 确认建立完成
+        getServer().logger.log("Finish building KD_tree..."); 
+            cout << "Finish building KD_tree..." << endl;
+
         RGBA* pixels = new RGBA[width*height]{};
 
         // 局部坐标转换成世界坐标
@@ -99,48 +111,48 @@ namespace PhotonMapping
         getServer().logger.log("Done...");
 
         
-        getServer().logger.log("Test kd-tree");
+        // getServer().logger.log("Test kd-tree");
 
-        mt19937 rng(42);
-        uniform_real_distribution<float> dist(-1000.0f, 1000.0f);
+        // mt19937 rng(42);
+        // uniform_real_distribution<float> dist(-1000.0f, 1000.0f);
 
-        size_t num_photons = 100000;
-        vector<photon> photons;
-        photons.reserve(num_photons);
-        for (size_t i = 0; i < num_photons; ++i)
-        {
-            Vec3 pos(dist(rng), dist(rng), dist(rng));
-            photons.emplace_back(pos, Vec3(0.f, 0.f, 0.f), Ray(), Ray());
-        }
+        // size_t num_photons = 100000;
+        // vector<photon> photons;
+        // photons.reserve(num_photons);
+        // for (size_t i = 0; i < num_photons; ++i)
+        // {
+        //     Vec3 pos(dist(rng), dist(rng), dist(rng));
+        //     photons.emplace_back(pos, Vec3(0.f, 0.f, 0.f), Ray(), Ray());
+        // }
 
-        auto start_build = chrono::high_resolution_clock::now();
-        kdtree = new KDTree<photon, 3>(photons.begin(), photons.end());
-        auto end_build = chrono::high_resolution_clock::now();
-        chrono::duration<double> build_duration = end_build - start_build;
-        getServer().logger.log("KDTree built in " + to_string(build_duration.count()) + " seconds.\n");
+        // auto start_build = chrono::high_resolution_clock::now();
+        // kdtree = new KDTree<photon, 3>(photons.begin(), photons.end());
+        // auto end_build = chrono::high_resolution_clock::now();
+        // chrono::duration<double> build_duration = end_build - start_build;
+        // getServer().logger.log("KDTree built in " + to_string(build_duration.count()) + " seconds.\n");
 
-        size_t num_queries = 1000;
-        int k = 10;
+        // size_t num_queries = 1000;
+        // int k = 10;
 
-        vector<Vec3> query_points;
-        query_points.reserve(num_queries);
-        for (size_t i = 0; i < num_queries; ++i)
-        {
-            Vec3 q_pos(dist(rng), dist(rng), dist(rng));
-            query_points.emplace_back(q_pos);
-        }
+        // vector<Vec3> query_points;
+        // query_points.reserve(num_queries);
+        // for (size_t i = 0; i < num_queries; ++i)
+        // {
+        //     Vec3 q_pos(dist(rng), dist(rng), dist(rng));
+        //     query_points.emplace_back(q_pos);
+        // }
 
-        vector<vector<photon>> kdtree_results;
-        kdtree_results.reserve(num_queries);
+        // vector<vector<photon>> kdtree_results;
+        // kdtree_results.reserve(num_queries);
 
-        auto start_kdtree = std::chrono::high_resolution_clock::now();
-        for (const auto& q : query_points)
-        {
-            kdtree_results.emplace_back(kdtree->kNearest(q, k));
-        }
-        auto end_kdtree = std::chrono::high_resolution_clock::now();
-        chrono::duration<double> kdtree_duration = end_kdtree - start_kdtree;
-        getServer().logger.log("KDTree query done in " + to_string(kdtree_duration.count()) + " seconds.\n");
+        // auto start_kdtree = std::chrono::high_resolution_clock::now();
+        // for (const auto& q : query_points)
+        // {
+        //     kdtree_results.emplace_back(kdtree->kNearest(q, k));
+        // }
+        // auto end_kdtree = std::chrono::high_resolution_clock::now();
+        // chrono::duration<double> kdtree_duration = end_kdtree - start_kdtree;
+        // getServer().logger.log("KDTree query done in " + to_string(kdtree_duration.count()) + " seconds.\n");
         
 
         return {pixels, width, height};
@@ -197,6 +209,7 @@ namespace PhotonMapping
     }
 
     RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth) {
+        cout << currDepth << endl;
         if (currDepth == depth) return scene.ambient.constant;
         auto hitObject = closestHitObject(r);
         auto [ t, emitted ] = closestHitLight(r);
@@ -226,8 +239,8 @@ namespace PhotonMapping
                 float r_n_dot_in = glm::dot(hitObject->normal, refraction_ray.direction);
                 refrac_res += refraction_next * abs(r_n_dot_in) * scattered.r_attenuation / scattered.r_pdf;
             }
-
-            return emitted + attenuation * next * n_dot_in / pdf + refrac_res;
+            RGB IndirectPow = EstimateIndirectRadiance(r, hitObject);
+            return emitted + attenuation * next * n_dot_in / pdf + refrac_res + IndirectPow;
         }
         // 
         else if (t != FLOAT_INF) {
@@ -280,7 +293,7 @@ namespace PhotonMapping
     // 用于追踪随机发射的光子
     void PhotonMappingRenderer::TracePhoton(const Ray& r, const RGB& power, unsigned depth)
     {
-        getServer().logger.log("Current Depth is " + to_string(depth) + "/" + to_string(this->depth) + "\n");
+        //getServer().logger.log("Current Depth is " + to_string(depth) + "/" + to_string(this->depth) + "\n");
         if (depth > this->depth)
         {
             return;
@@ -373,9 +386,29 @@ namespace PhotonMapping
     }
 
     // 用于计算hitpoint提供的间接光强
-    RGB PhotonMappingRenderer::EstimateIndirectRadiance(const HitRecord& Hit)
+    RGB PhotonMappingRenderer::EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit)
     {
-        return RGB();
+        RGB IndirectPower = { 0.f,0.f,0.f };
+        const auto& Scatter = shaderPrograms[Hit->material.index()]->shade(r, Hit->hitPoint, Hit->normal);
+        int num = 100;
+        const auto& photons = kdtree->kNearest(Hit->hitPoint, num);
+        for (auto& photon : photons)
+        {
+            // 首先计算光子位置到Hitpoint的方向向量
+            const auto& pos_vec = glm::normalize(photon.GetPosition() - r.direction);
+            // 计算光子和法向量的cos
+            const auto& cos_thera = glm::dot(pos_vec, Hit->normal);
+
+            // 表示在背面，所以继续
+            if (cos_thera < 0.f)
+            {
+                continue;
+            }
+
+            IndirectPower += photon.GetPower() * Scatter.attenuation * cos_thera;
+
+        }
+        return IndirectPower;
     }
 }
 
