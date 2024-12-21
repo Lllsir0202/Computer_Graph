@@ -23,7 +23,7 @@ namespace PhotonMapping
 }
 
 const static string description =
-"A Simple Path Tracer. "
+"A Simple PhotonMapping. "
 "Only some simple primitives and materials(Lambertian) are supported."
 "\nPlease use scene file : cornel_area_light.scn";
 

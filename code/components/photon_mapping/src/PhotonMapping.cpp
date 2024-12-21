@@ -80,6 +80,9 @@ namespace PhotonMapping
         VertexTransformer vertexTransformer{};
         vertexTransformer.exec(spScene);
 
+        getServer().logger.log("Current photon num is " + to_string(this->photonnum) + "\n");
+        getServer().logger.log("Current width is " + to_string(this->width) + "\n");
+
         const auto taskNums = 8;
         thread t[taskNums];
         for (int i=0; i < taskNums; i++) {

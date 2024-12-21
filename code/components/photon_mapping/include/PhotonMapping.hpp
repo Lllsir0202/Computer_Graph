@@ -36,6 +36,9 @@ namespace PhotonMapping
         // 用vector先存储记录光子
         vector<photon> Photons;
 
+        // 记录下迭代次数
+        unsigned int photoniters;
+
         using SCam = PhotonMapping::Camera;
         SCam camera;
 
@@ -53,6 +56,7 @@ namespace PhotonMapping
 
             // 添加光子数目
             photonnum = scene.renderOption.photonnum;
+            photoniters = scene.renderOption.photoniters;
         }
         ~PhotonMappingRenderer() = default;
 
