@@ -72,11 +72,17 @@ namespace PhotonMapping
         template <typename Target>
         void searchKNearest(const Node* node, const Target& target, int k, std::priority_queue<HeapItem>& heap) const;
 
+        template <typename Target>
+        void searchWithinRadius(const Node* node, const Target& target, float r, std::vector<Point>& result) const;
+
     public:
         void insert(const Point& point);
 
         template <typename Target>
         std::vector<Point> kNearest(const Target& target, int k) const;
+
+        template <typename Target>
+        std::vector<Point> withinRadius(const Target& target, float r) const;
 
         template <typename Iterator>
         void insert(Iterator begin, Iterator end);
