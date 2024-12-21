@@ -228,7 +228,6 @@ namespace PhotonMapping
         // 接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0) // 表示漫反射
         {
-
         }
     }
 }
