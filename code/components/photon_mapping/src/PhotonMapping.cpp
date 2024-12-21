@@ -6,9 +6,28 @@
 #include "intersections/intersections.hpp"
 
 #include "glm/gtc/matrix_transform.hpp"
+#include "Onb.hpp"
+
+#include <random>
 
 namespace PhotonMapping
 {
+    static Vec3 RandomPhotonPositionGenerater(const AreaLight& area)
+    {
+        // 生成随机数
+        static thread_local std::mt19937 rng(std::random_device{}());
+
+        // 生成0-1的随机数
+        std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+
+        float r1 = dist(rng);
+        float r2 = dist(rng);
+
+        // 返回随机位置
+        // 对于一个面光源，u、v分别表示两个方向，随机取值加上位置，可以得到任意的位置
+        return area.position + r1 * area.u + r2 * area.v;
+    }
+
     RGB PhotonMappingRenderer::gamma(const RGB& rgb) {
         return glm::sqrt(rgb);
     }
@@ -146,4 +165,70 @@ namespace PhotonMapping
             return Vec3{0};
         }
     }
+
+    void PhotonMappingRenderer::RandomPhoton()
+    {
+        getServer().logger.log("Start to Random Shoot Photon...");
+        // 接下来处理采样，首先对于随机的光子数目，产生随机位置和方向
+        for (int i = 0; i < photonnum; i++)
+        {
+            for (auto& area : scene.areaLightBuffer)
+            {
+                // 得到面光源表面的随机位置
+                Vec3 Position = RandomPhotonPositionGenerater(area);
+
+                // 接下来需要计算面光源发出光线的随机方向
+                // 这里先使用实现好的半球，后面考虑重新实现一个余弦加权随机
+                Vec3 Local_dir = defaultSamplerInstance<HemiSphere>().sample3d();
+
+                // 转换之前我们需要知道面光源的法向量
+                Vec3 AreaLight_normal = glm::normalize(glm::cross(area.u, area.v));
+                Vec3 World_dir = glm::normalize(Onb(AreaLight_normal).local(Local_dir));
+                
+                // 得到光强
+                // 首先计算光源面积
+                float AreaLight_Area = glm::length(glm::cross(area.u, area.v));
+                // 由于我们需要计算的是
+                RGB Power = (area.radiance * AreaLight_Area) / (static_cast<float>(photonnum));
+
+                // 得到光
+                Ray r(Position, World_dir);
+
+                // 接下来对光子进行追踪
+                TracePhoton(r, Power, 0);
+            }
+        }
+    }
+
+    // 用于追踪随机发射的光子
+    void PhotonMappingRenderer::TracePhoton(const Ray& r, const RGB& power, unsigned depth)
+    {
+        getServer().logger.log("Current Depth is " + to_string(depth) + "/" + to_string(this->depth) + "\n");
+        if (depth > this->depth)
+        {
+            return;
+        }
+
+        // 找到最近的hitobject
+        HitRecord hitrecord = closestHitObject(r);
+        // 如果没有hit，那么返回
+        if (!hitrecord)
+        {
+            return;
+        }
+
+        // 分别得到hit点、法向量、材质
+        const auto& hitpoint = hitrecord->hitPoint;
+        const auto& normal = hitrecord->normal;
+        const auto& material = hitrecord->material;
+
+        // 得到打在hitobject上后的光线
+        const auto& scatter = shaderPrograms[material.index()]->shade(r, hitpoint, normal);
+
+        // 接下来根据材质进行判断
+        if (spScene->materials[material.index()].type == 0) // 表示漫反射
+        {
+        }
+    }
 }
+

@@ -9,6 +9,9 @@
 
 #include "shaders/ShaderCreator.hpp"
 
+// 引入光子
+#include "Photon.hpp"
+
 #include <tuple>
 namespace PhotonMapping
 {
@@ -27,6 +30,12 @@ namespace PhotonMapping
         unsigned int depth;
         unsigned int samples;
 
+        // 下面是记录光子数目
+        unsigned int photonnum;
+
+        // 用vector先存储记录光子
+        vector<photon> Photons;
+
         using SCam = PhotonMapping::Camera;
         SCam camera;
 
@@ -41,6 +50,9 @@ namespace PhotonMapping
             height = scene.renderOption.height;
             depth = scene.renderOption.depth;
             samples = scene.renderOption.samplesPerPixel;
+
+            // 添加光子数目
+            photonnum = scene.renderOption.photonnum;
         }
         ~PhotonMappingRenderer() = default;
 
@@ -55,6 +67,12 @@ namespace PhotonMapping
         RGB trace(const Ray& ray, int currDepth);
         HitRecord closestHitObject(const Ray& r);
         tuple<float, Vec3> closestHitLight(const Ray& r);
+
+        // 添加随机发射光子
+        void RandomPhoton();
+
+        // 添加光子追踪
+        void TracePhoton(const Ray& r, const RGB& power, unsigned depth);
     };
 }
 

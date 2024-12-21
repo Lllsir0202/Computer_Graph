@@ -16,11 +16,14 @@ namespace NRenderer
         unsigned int height;
         unsigned int depth;
         unsigned int samplesPerPixel;
+        // 添加光子数目
+        unsigned int photonnum;
         RenderOption()
             : width             (500)
             , height            (500)
             , depth             (4)
             , samplesPerPixel   (16)
+            , photonnum         (50000)
         {}
     };
 
