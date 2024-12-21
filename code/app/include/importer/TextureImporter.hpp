@@ -8,11 +8,11 @@ namespace NRenderer
 {
     class TextureImporter : public Importer
     {
-    public:
-        TextureImporter() = default;
+      public:
+        TextureImporter()  = default;
         ~TextureImporter() = default;
         virtual bool import(Asset& asset, const string& path) override;
     };
-}
+}  // namespace NRenderer
 
 #endif

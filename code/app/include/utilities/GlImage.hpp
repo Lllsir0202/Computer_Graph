@@ -10,10 +10,11 @@ namespace NRenderer
     using GlImageId = unsigned int;
     class GlImage
     {
-    private:
-    public:
-        static GlImageId loadImage(const RGBA* pixels, const Vec2& size) {
-            GlImageId id  = 0u;
+      private:
+      public:
+        static GlImageId loadImage(const RGBA* pixels, const Vec2& size)
+        {
+            GlImageId id = 0u;
             glGenTextures(1, &id);
             glBindTexture(GL_TEXTURE_2D, id);
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -22,11 +23,10 @@ namespace NRenderer
             glBindTexture(GL_TEXTURE_2D, 0);
             return id;
         }
-        static void deleteImage(GlImageId id) {
-            glDeleteTextures(1, &id);
-        }
-        static GlImageId loadImage(const RGB* pixels, const Vec2& size) {
-            GlImageId id  = 0u;
+        static void      deleteImage(GlImageId id) { glDeleteTextures(1, &id); }
+        static GlImageId loadImage(const RGB* pixels, const Vec2& size)
+        {
+            GlImageId id = 0u;
             glGenTextures(1, &id);
             glBindTexture(GL_TEXTURE_2D, id);
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -35,8 +35,7 @@ namespace NRenderer
             glBindTexture(GL_TEXTURE_2D, 0);
             return id;
         }
-    };    
-} // namespace NRenderer
-
+    };
+}  // namespace NRenderer
 
 #endif

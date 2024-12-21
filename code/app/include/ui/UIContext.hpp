@@ -15,7 +15,8 @@ namespace NRenderer
         };
         State state;
 
-        enum class PreviewMode {
+        enum class PreviewMode
+        {
             PREVIEW_NONE,
             PREVIEW_MODEL,
             PREVIEW_NODE,
@@ -29,18 +30,14 @@ namespace NRenderer
         Index previewLight;
 
         UIContext()
-            : state (State::NORMAL)
-            , previewNode(-1)
-            , previewLight(-1)
-            , previewModel(-1)
-            , previewMode(PreviewMode::PREVIEW_NONE)
+            : state(State::NORMAL),
+              previewNode(-1),
+              previewLight(-1),
+              previewModel(-1),
+              previewMode(PreviewMode::PREVIEW_NONE)
         {}
-        inline
-        State getState() const {
-            return state;
-        }
+        inline State getState() const { return state; }
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

@@ -11,7 +11,6 @@ namespace NRenderer
     {
         SharedMaterial material;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

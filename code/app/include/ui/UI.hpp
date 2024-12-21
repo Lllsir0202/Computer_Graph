@@ -19,17 +19,18 @@ namespace NRenderer
     using namespace std;
     class UI
     {
-    private:
+      private:
         unsigned int height;
         unsigned int width;
-        string title;
-        GLFWwindow* window;
+        string       title;
+        GLFWwindow*  window;
 
-        Manager manager;
+        Manager   manager;
         UIContext uiContext;
 
         vector<View*> views;
-    public:
+
+      public:
         UI();
         UI(unsigned int width, unsigned int height, const string& title);
         UI(const UI&) = delete;
@@ -37,7 +38,6 @@ namespace NRenderer
         void init();
         void run();
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

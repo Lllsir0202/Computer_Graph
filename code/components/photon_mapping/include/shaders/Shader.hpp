@@ -17,17 +17,15 @@ namespace PhotonMapping
 
     class Shader
     {
-    protected:
-        Material& material;
+      protected:
+        Material&        material;
         vector<Texture>& textureBuffer;
-    public:
-        Shader(Material& material, vector<Texture>& textures)
-            : material              (material)
-            , textureBuffer         (textures)
-        {}
+
+      public:
+        Shader(Material& material, vector<Texture>& textures) : material(material), textureBuffer(textures) {}
         virtual Scattered shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const = 0;
     };
     SHARE(Shader);
-}
+}  // namespace PhotonMapping
 
 #endif

@@ -2,11 +2,8 @@
 #include "server/Server.hpp"
 namespace NRenderer
 {
-    Manager::Manager()
-        : renderSettingsManager             ()
-        , assetManager                      ()
-        , componentManager                  ()
+    Manager::Manager() : renderSettingsManager(), assetManager(), componentManager()
     {
         componentManager.init(".\\components\\*.dll");
-   }
-}
+    }
+}  // namespace NRenderer

@@ -13,44 +13,44 @@ namespace NRenderer
 {
     struct Asset
     {
-        vector<ModelItem> modelItems;
-        vector<NodeItem> nodeItems;
+        vector<ModelItem>    modelItems;
+        vector<NodeItem>     nodeItems;
         vector<MaterialItem> materialItems;
-        vector<TextureItem> textureItems;
-        vector<LightItem> lightItems;
+        vector<TextureItem>  textureItems;
+        vector<LightItem>    lightItems;
 
-        vector<SharedSphere> spheres;
+        vector<SharedSphere>   spheres;
         vector<SharedTriangle> triangles;
-        vector<SharedPlane> planes;
-        vector<SharedMesh> meshes;
+        vector<SharedPlane>    planes;
+        vector<SharedMesh>     meshes;
 
-        vector<SharedPointLight> pointLights;
-        vector<SharedAreaLight> areaLights;
+        vector<SharedPointLight>       pointLights;
+        vector<SharedAreaLight>        areaLights;
         vector<SharedDirectionalLight> directionalLights;
-        vector<SharedSpotLight> spotLights;
+        vector<SharedSpotLight>        spotLights;
 
-        void clearModel() {
-            for (auto& node : nodeItems) {
-                if (node.glVAO != 0) {
-                    glDeleteVertexArrays(1, &node.glVAO);
-                }
-                if (node.glVBO != 0) {
-                    glDeleteBuffers(1, &node.glVBO);
-                }
-                if (node.glEBO != 0) {
-                    glDeleteBuffers(1, &node.glEBO);
-                }
+        void clearModel()
+        {
+            for (auto& node : nodeItems)
+            {
+                if (node.glVAO != 0) { glDeleteVertexArrays(1, &node.glVAO); }
+                if (node.glVBO != 0) { glDeleteBuffers(1, &node.glVBO); }
+                if (node.glEBO != 0) { glDeleteBuffers(1, &node.glEBO); }
             }
-            for (auto& light : lightItems) {
-                if (light.glVAO != 0) {
+            for (auto& light : lightItems)
+            {
+                if (light.glVAO != 0)
+                {
                     glDeleteVertexArrays(1, &light.glVAO);
                     light.glVAO = 0;
                 }
-                if (light.glVBO != 0) {
+                if (light.glVBO != 0)
+                {
                     glDeleteBuffers(1, &light.glVBO);
                     light.glVBO = 0;
                 }
-                if (light.glEBO != 0) {
+                if (light.glEBO != 0)
+                {
                     glDeleteBuffers(1, &light.glEBO);
                     light.glEBO = 0;
                 }
@@ -62,10 +62,10 @@ namespace NRenderer
             triangles.clear();
             planes.clear();
             meshes.clear();
-
         }
 
-        void clearLight() {
+        void clearLight()
+        {
             lightItems.clear();
 
             pointLights.clear();
@@ -74,13 +74,9 @@ namespace NRenderer
             spotLights.clear();
         }
 
-        void clearMaterial() {
-            materialItems.clear();
-        }
+        void clearMaterial() { materialItems.clear(); }
 
-        void clearTexture() {
-            textureItems.clear();
-        }
+        void clearTexture() { textureItems.clear(); }
 
         void genPreviewGlBuffersPerNode(NodeItem& node);
         void genPreviewGlBuffersPerLight(LightItem& light);
@@ -88,8 +84,7 @@ namespace NRenderer
         void updateNodeGlDrawData(NodeItem& node);
         void updateLightGlDrawData(LightItem& light);
     };
-    
-} // namespace NRenderer
 
+}  // namespace NRenderer
 
 #endif

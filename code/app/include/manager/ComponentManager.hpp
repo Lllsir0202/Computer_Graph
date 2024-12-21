@@ -15,7 +15,7 @@ namespace NRenderer
     using namespace std;
     class DLL_EXPORT ComponentManager
     {
-    public:
+      public:
         enum class State
         {
             IDLING,
@@ -23,53 +23,58 @@ namespace NRenderer
             RUNNING,
             FINISH
         };
-    private:
-        State state;
-        vector<HMODULE> loadedDlls;
-        ComponentInfo activeComponent;
+
+      private:
+        State                            state;
+        vector<HMODULE>                  loadedDlls;
+        ComponentInfo                    activeComponent;
         chrono::system_clock::time_point lastStartTime;
         chrono::system_clock::time_point lastEndTime;
-        thread t;
-    public:
+        thread                           t;
+
+      public:
         ComponentManager();
         ~ComponentManager();
 
         void init(const string& dllPath);
-        
+
         ComponentInfo getActiveComponentInfo() const;
-        
-        template<typename Interface, typename ...Args>
-        void exec(const ComponentInfo& componentInfo, Args... args) {
-            auto component = getServer().componentFactory.createComponent<Interface>(componentInfo.type, componentInfo.name);
+
+        template <typename Interface, typename... Args>
+        void exec(const ComponentInfo& componentInfo, Args... args)
+        {
+            auto component =
+                getServer().componentFactory.createComponent<Interface>(componentInfo.type, componentInfo.name);
             activeComponent = componentInfo;
-            this->state = State::READY;
-            try {
-                t = thread(&Interface::exec,
-                    component, 
+            this->state     = State::READY;
+            try
+            {
+                t = thread(
+                    &Interface::exec,
+                    component,
                     [this]() -> void {
-                        this->state = State::RUNNING;
+                        this->state         = State::RUNNING;
                         this->lastStartTime = chrono::system_clock::now();
                     },
                     [this]() -> void {
-                        this->state = State::FINISH;
+                        this->state       = State::FINISH;
                         this->lastEndTime = chrono::system_clock::now();
                     },
                     std::forward<Args>(args)...);
-                    t.detach();
-            }
-            catch(const exception& e) {
-                cerr<<"Unexpected termination"<<endl;
-                cerr<<e.what()<<endl;
+                t.detach();
+            } catch (const exception& e)
+            {
+                cerr << "Unexpected termination" << endl;
+                cerr << e.what() << endl;
             }
         }
-    
+
         void finish();
 
         State getState() const;
 
         chrono::duration<double> getLastExecTime() const;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

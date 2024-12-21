@@ -10,10 +10,10 @@ namespace PhotonMapping
     // 由局部坐标转换为世界坐标
     class VertexTransformer
     {
-    private:
-    public:
+      private:
+      public:
         void exec(SharedScene spScene);
     };
-}
+}  // namespace PhotonMapping
 
 #endif

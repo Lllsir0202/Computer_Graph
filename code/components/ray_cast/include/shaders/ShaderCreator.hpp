@@ -10,25 +10,20 @@ namespace RayCast
 {
     class ShaderCreator
     {
-    public:
+      public:
         ShaderCreator() = default;
-        SharedShader create(Material& material, vector<Texture>& t) {
+        SharedShader create(Material& material, vector<Texture>& t)
+        {
             SharedShader shader{nullptr};
             switch (material.type)
             {
-            case 0:
-                shader = make_shared<Lambertian>(material, t);
-                break;
-            case 1:
-                shader = make_shared<Phong>(material, t);
-                break;
-            default:
-                shader = make_shared<Lambertian>(material, t);
-                break;
+                case 0: shader = make_shared<Lambertian>(material, t); break;
+                case 1: shader = make_shared<Phong>(material, t); break;
+                default: shader = make_shared<Lambertian>(material, t); break;
             }
             return shader;
         }
     };
-}
+}  // namespace RayCast
 
 #endif

@@ -3,11 +3,11 @@
 #define __NR_MACROS_HPP__
 
 #ifdef _WIN32
-    #define DLL_IMPORT __declspec(dllimport)
-    #define DLL_EXPORT __declspec(dllexport)
+#define DLL_IMPORT __declspec(dllimport)
+#define DLL_EXPORT __declspec(dllexport)
 #else
-    #define DLL_IMPORT
-    #define DLL_EXPORT
+#define DLL_IMPORT
+#define DLL_EXPORT
 #endif
 
 #include <memory>

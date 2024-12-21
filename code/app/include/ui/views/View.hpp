@@ -11,11 +11,11 @@ namespace NRenderer
 {
     class View
     {
-    protected:
-        Vec2 position;
-        Vec2 size;
+      protected:
+        Vec2       position;
+        Vec2       size;
         UIContext& uiContext;
-        Manager& manager;
+        Manager&   manager;
 
         bool disable;
         bool visible;
@@ -31,26 +31,17 @@ namespace NRenderer
         virtual void draw() = 0;
 
         void makeHelper(const char* desc);
-    public:
+
+      public:
         View(const Vec2& position, const Vec2& size, UIContext& uiContext, Manager& manager);
         View(const View&) = delete;
-        
-        void display();
-        
-        inline
-        void setVisibility(bool flag) {
-            visible = flag;
-        }
-        inline
-        void setDisable(bool flag) {
-            disable = flag;
-        }
-        inline
-        void setResizable(bool flag) {
-            resizable = flag;
-        }
-    };
-} // namespace NRenderer
 
+        void display();
+
+        inline void setVisibility(bool flag) { visible = flag; }
+        inline void setDisable(bool flag) { disable = flag; }
+        inline void setResizable(bool flag) { resizable = flag; }
+    };
+}  // namespace NRenderer
 
 #endif

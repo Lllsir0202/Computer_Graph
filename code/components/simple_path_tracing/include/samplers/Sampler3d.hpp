@@ -12,11 +12,11 @@ namespace SimplePathTracer
     using NRenderer::Vec3;
     class Sampler3d : public Sampler
     {
-        
-    public:
-        Sampler3d() = default;
+
+      public:
+        Sampler3d()             = default;
         virtual Vec3 sample3d() = 0;
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

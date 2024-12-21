@@ -26,9 +26,9 @@ namespace PhotonMapping
         // 表示折射衰减
         Vec3 r_attenuation = {};
         // 表示折射概率密度函数
-        float r_pdf = { 0.f };
+        float r_pdf = {0.f};
     };
-    
-}
+
+}  // namespace PhotonMapping
 
 #endif

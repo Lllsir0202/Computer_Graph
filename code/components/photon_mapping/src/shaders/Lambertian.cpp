@@ -5,14 +5,16 @@
 
 namespace PhotonMapping
 {
-    Lambertian::Lambertian(Material& material, vector<Texture>& textures)
-        : Shader                (material, textures)
+    Lambertian::Lambertian(Material& material, vector<Texture>& textures) : Shader(material, textures)
     {
         auto diffuseColor = material.getProperty<Property::Wrapper::RGBType>("diffuseColor");
-        if (diffuseColor) albedo = (*diffuseColor).value;
-        else albedo = {1, 1, 1};
+        if (diffuseColor)
+            albedo = (*diffuseColor).value;
+        else
+            albedo = {1, 1, 1};
     }
-    Scattered Lambertian::shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const {
+    Scattered Lambertian::shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const
+    {
         Vec3 origin = hitPoint;
         Vec3 random = defaultSamplerInstance<HemiSphere>().sample3d();
         // if (normal == Vec3{0, 0, 1}) {
@@ -30,18 +32,13 @@ namespace PhotonMapping
         // }
         // direction = glm::normalize(direction);
 
-        Onb onb{normal};
+        Onb  onb{normal};
         Vec3 direction = glm::normalize(onb.local(random));
 
-        float pdf = 1/(2*PI);
+        float pdf = 1 / (2 * PI);
 
         auto attenuation = albedo / PI;
 
-        return {
-            Ray{origin, direction},
-            attenuation,
-            Vec3{0},
-            pdf
-        };
+        return {Ray{origin, direction}, attenuation, Vec3{0}, pdf};
     }
-}
+}  // namespace PhotonMapping

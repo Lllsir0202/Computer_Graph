@@ -9,15 +9,17 @@
 
 namespace NRenderer
 {
-    class DLL_EXPORT RenderComponent: public Component
+    class DLL_EXPORT RenderComponent : public Component
     {
-    private:
+      private:
         virtual void render(SharedScene spScene) = 0;
-    public:
+
+      public:
         void exec(function<void()> onStart, function<void()> onFinish, SharedScene spScene);
     };
-}
+}  // namespace NRenderer
 
-#define REGISTER_RENDERER(__NAME__, __DESCRIPTION__, __CLASS__)          REGISTER_COMPONENT(Render, __NAME__, __DESCRIPTION__, __CLASS__)
-#define REGISTER_RENDERER_NO_DESCRIPTION(__NAME__, __CLASS__)            REGISTER_RENDERER(__NAME__, "" ,__CLASS__)
+#define REGISTER_RENDERER(__NAME__, __DESCRIPTION__, __CLASS__) \
+    REGISTER_COMPONENT(Render, __NAME__, __DESCRIPTION__, __CLASS__)
+#define REGISTER_RENDERER_NO_DESCRIPTION(__NAME__, __CLASS__) REGISTER_RENDERER(__NAME__, "", __CLASS__)
 #endif

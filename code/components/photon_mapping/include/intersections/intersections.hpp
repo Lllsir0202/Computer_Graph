@@ -14,7 +14,7 @@ namespace PhotonMapping
         HitRecord xSphere(const Ray& ray, const Sphere& s, float tMin = 0.f, float tMax = FLOAT_INF);
         HitRecord xPlane(const Ray& ray, const Plane& p, float tMin = 0.f, float tMax = FLOAT_INF);
         HitRecord xAreaLight(const Ray& ray, const AreaLight& a, float tMin = 0.f, float tMax = FLOAT_INF);
-    }
-}
+    }  // namespace Intersection
+}  // namespace PhotonMapping
 
 #endif

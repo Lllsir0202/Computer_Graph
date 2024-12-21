@@ -10,20 +10,16 @@ namespace NRenderer
     using namespace std;
     class Importer
     {
-    protected:
+      protected:
         string lastErrorInfo;
-    public:
-        virtual bool import(Asset& asset, const string& path) = 0;
-        inline
-        string getErrorInfo() const {
-            return lastErrorInfo;
-        }
-        Importer()
-            : lastErrorInfo         ()
-        {}
+
+      public:
+        virtual bool  import(Asset& asset, const string& path) = 0;
+        inline string getErrorInfo() const { return lastErrorInfo; }
+        Importer() : lastErrorInfo() {}
         virtual ~Importer() = default;
     };
     SHARE(Importer);
-}
+}  // namespace NRenderer
 
 #endif

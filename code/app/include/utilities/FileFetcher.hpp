@@ -10,12 +10,11 @@ namespace NRenderer
     using namespace std;
     class FileFetcher
     {
-    public:
-        FileFetcher() = default;
+      public:
+        FileFetcher()  = default;
         ~FileFetcher() = default;
         optional<string> fetch(const char* filter) const;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

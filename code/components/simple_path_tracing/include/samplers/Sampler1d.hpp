@@ -10,10 +10,10 @@ namespace SimplePathTracer
 {
     class Sampler1d : protected Sampler
     {
-    public:
-        Sampler1d() = default;
+      public:
+        Sampler1d()              = default;
         virtual float sample1d() = 0;
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

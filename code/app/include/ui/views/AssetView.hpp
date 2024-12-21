@@ -6,24 +6,24 @@
 
 namespace NRenderer
 {
-    class AssetView: public View
+    class AssetView : public View
     {
-    private:
+      private:
         virtual void drawBeginWindow() override;
         virtual void draw() override;
-        void menu();
-        void modelTab();
-        void materialTab();
-        void textureTab();
-        void lightTab();
+        void         menu();
+        void         modelTab();
+        void         materialTab();
+        void         textureTab();
+        void         lightTab();
 
         int currMtlIndex;
         int currLightIndex;
 
         Property tempProp;
-        int tempPropTypeIndex;
-        bool isPropKeyValid;
-        void tempPropEditor();
+        int      tempPropTypeIndex;
+        bool     isPropKeyValid;
+        void     tempPropEditor();
 
         void resetTempProp();
 
@@ -31,10 +31,9 @@ namespace NRenderer
 
         void materialPropEditor(SharedMaterial spMaterial);
 
-    public:
+      public:
         AssetView(const Vec2& position, const Vec2& size, UIContext& uiContext, Manager& manager);
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

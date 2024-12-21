@@ -12,21 +12,18 @@ namespace RayCast
     using namespace std;
     struct HitRecordBase
     {
-        float t;
-        Vec3 hitPoint;
-        Vec3 normal;
+        float  t;
+        Vec3   hitPoint;
+        Vec3   normal;
         Handle material;
     };
     using HitRecord = optional<HitRecordBase>;
-    inline
-    HitRecord getMissRecord() {
-        return nullopt;
-    }
+    inline HitRecord getMissRecord() { return nullopt; }
 
-    inline
-    HitRecord getHitRecord(float t, const Vec3& hitPoint, const Vec3& normal, Handle material) {
+    inline HitRecord getHitRecord(float t, const Vec3& hitPoint, const Vec3& normal, Handle material)
+    {
         return make_optional<HitRecordBase>(t, hitPoint, normal, material);
     }
-}
+}  // namespace RayCast
 
 #endif

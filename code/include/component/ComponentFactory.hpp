@@ -10,7 +10,8 @@
 
 namespace NRenderer
 {
-    struct DLL_EXPORT ComponentInfo {
+    struct DLL_EXPORT ComponentInfo
+    {
         string id;
         string type;
         string name;
@@ -18,32 +19,37 @@ namespace NRenderer
     };
     struct DLL_EXPORT ComponentWrapper
     {
-        ComponentInfo info;
+        ComponentInfo              info;
         function<SharedInstance()> constructor;
     };
     class DLL_EXPORT ComponentFactory final
     {
-    public:
-        ComponentFactory() = default;
+      public:
+        ComponentFactory()          = default;
         virtual ~ComponentFactory() = default;
-        bool registerComponent(const string& type, const string& name, const string& description, function<SharedInstance()> constructor);
+        bool registerComponent(
+            const string& type, const string& name, const string& description, function<SharedInstance()> constructor);
         void unregisterComponent(const string& type, const string& name);
-        template<typename T>
-        shared_ptr<T> createComponent(const string& type, const string& name) {
+        template <typename T>
+        shared_ptr<T> createComponent(const string& type, const string& name)
+        {
             return static_pointer_cast<T>(createInstance(type, name));
         }
-    
+
         vector<ComponentInfo> getComponentsInfo(const string& type = "");
-    protected:
+
+      protected:
         SharedInstance createInstance(const string& type, const string& name);
-    private:
-        static string getId(const string& type, const string& id) {
+
+      private:
+        static string getId(const string& type, const string& id)
+        {
             string prefix = "NR";
             return prefix + "." + type + "." + id;
         }
         unordered_map<string, unordered_map<string, ComponentWrapper> > constructors;
     };
-} // namespace NRenderer
+}  // namespace NRenderer
 
 /*
 extern "C" {

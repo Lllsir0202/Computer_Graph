@@ -5,21 +5,23 @@
 using namespace std;
 
 #ifdef _WIN32
-    #ifndef _DEBUG
-        // #pragma comment( linker, "/subsystem:windows /entry:mainCRTStartup")
-    #endif
+#ifndef _DEBUG
+// #pragma comment( linker, "/subsystem:windows /entry:mainCRTStartup")
+#endif
 #endif
 
-int main() {
+int main()
+{
     NRenderer::UI ui{1600, 900, "服务于本科教学的三维渲染系统"};
-    try {
+    try
+    {
         ui.init();
-    }
-    catch (const exception& e) {
-        cerr<<e.what()<<endl;
+    } catch (const exception& e)
+    {
+        cerr << e.what() << endl;
     }
 
     ui.run();
-    
+
     return 0;
 }

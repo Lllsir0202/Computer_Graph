@@ -22,16 +22,16 @@ namespace PhotonMapping
 
     struct DirectLightingRes
     {
-        Vec3 radiance;
+        Vec3  radiance;
         float pdf;
     };
 
     class PhotonMappingRenderer
     {
-    public:
-    private:
+      public:
+      private:
         SharedScene spScene;
-        Scene& scene;
+        Scene&      scene;
 
         unsigned int width;
         unsigned int height;
@@ -54,19 +54,17 @@ namespace PhotonMapping
         SCam camera;
 
         vector<SharedShader> shaderPrograms;
-    public:
-        PhotonMappingRenderer(SharedScene spScene)
-            : spScene               (spScene)
-            , scene                 (*spScene)
-            , camera                (spScene->camera)
+
+      public:
+        PhotonMappingRenderer(SharedScene spScene) : spScene(spScene), scene(*spScene), camera(spScene->camera)
         {
-            width = scene.renderOption.width;
-            height = scene.renderOption.height;
-            depth = scene.renderOption.depth;
+            width   = scene.renderOption.width;
+            height  = scene.renderOption.height;
+            depth   = scene.renderOption.depth;
             samples = scene.renderOption.samplesPerPixel;
 
             // 添加光子数目
-            photonnum = scene.renderOption.photonnum;
+            photonnum   = scene.renderOption.photonnum;
             photoniters = scene.renderOption.photoniters;
 
             kdtree = nullptr;
@@ -78,14 +76,14 @@ namespace PhotonMapping
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
         RenderResult render();
-        void release(const RenderResult& r);
+        void         release(const RenderResult& r);
 
-    private:
+      private:
         void renderTask(RGBA* pixels, int width, int height, int off, int step);
 
-        RGB gamma(const RGB& rgb);
-        RGB trace(const Ray& ray, int currDepth);
-        HitRecord closestHitObject(const Ray& r);
+        RGB                gamma(const RGB& rgb);
+        RGB                trace(const Ray& ray, int currDepth);
+        HitRecord          closestHitObject(const Ray& r);
         tuple<float, Vec3> closestHitLight(const Ray& r);
 
         // 添加随机发射光子
@@ -101,6 +99,6 @@ namespace PhotonMapping
         tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
     };
-}
+}  // namespace PhotonMapping
 
 #endif

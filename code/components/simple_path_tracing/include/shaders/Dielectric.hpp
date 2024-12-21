@@ -8,13 +8,14 @@ namespace SimplePathTracer
 {
     class Dielectric : public Shader
     {
-    private:
-        Vec3 absorbed;
+      private:
+        Vec3  absorbed;
         float ior;
-    public:
+
+      public:
         Dielectric(Material& material, vector<Texture>& textures);
         Scattered shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const;
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

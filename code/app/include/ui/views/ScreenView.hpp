@@ -9,15 +9,15 @@
 
 namespace NRenderer
 {
-    class ScreenView: public View
+    class ScreenView : public View
     {
-    private:
+      private:
         virtual void drawBeginWindow() override;
         virtual void draw() override;
-        void drawGlPreview();
-        void preview();
-        void result();
-        float getShrinkNum();
+        void         drawGlPreview();
+        void         preview();
+        void         result();
+        float        getShrinkNum();
 
         GlShader nodeShader;
         GlShader lightShader;
@@ -31,7 +31,8 @@ namespace NRenderer
         unsigned int previewHeight;
         unsigned int previewWidth;
 
-        enum class CoordinateType {
+        enum class CoordinateType
+        {
             LEFT_HANDED,
             RIGHT_HANDED
         };
@@ -59,10 +60,10 @@ namespace NRenderer
 
         GlImageId renderResult;
         GlImageId previewResult;
-    public:
+
+      public:
         ScreenView(const Vec2& position, const Vec2& size, UIContext& uiContext, Manager& manager);
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

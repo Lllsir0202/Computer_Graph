@@ -15,7 +15,7 @@ namespace PhotonMapping
     template <typename Point, int K = 3>
     class KDTree
     {
-    public:
+      public:
         struct Node
         {
             Point point;
@@ -31,7 +31,7 @@ namespace PhotonMapping
             }
         };
 
-    private:
+      private:
         struct HeapItem
         {
             float distance;
@@ -40,32 +40,32 @@ namespace PhotonMapping
             bool operator<(const HeapItem& other) const { return distance < other.distance; }
         };
 
-    private:
+      private:
         Node* root;
 
-    public:
+      public:
         KDTree() : root(nullptr) {}
 
         template <typename Iterator,
             typename = typename std::enable_if<std::is_convertible<
-            typename std::iterator_traits<Iterator>::iterator_category, std::input_iterator_tag>::value>::type>
+                typename std::iterator_traits<Iterator>::iterator_category, std::input_iterator_tag>::value>::type>
         KDTree(Iterator begin, Iterator end);
 
-        KDTree(const KDTree&) = delete;
+        KDTree(const KDTree&)            = delete;
         KDTree& operator=(const KDTree&) = delete;
-        KDTree(KDTree&&) = delete;
-        KDTree& operator=(KDTree&&) = delete;
+        KDTree(KDTree&&)                 = delete;
+        KDTree& operator=(KDTree&&)      = delete;
 
         ~KDTree() { delete root; }
 
-    private:
+      private:
         template <typename Target>
         float distance(const Point& a, const Target& b) const;
 
         float variance(const std::vector<Point>& points, int dim) const;
         int   chooseSplit(const std::vector<Point>& points) const;
 
-    private:
+      private:
         Node* buildTree(std::vector<Point>& points, int depth);
         void  insertRecursive(Node* node, const Point& point);
 
@@ -75,7 +75,7 @@ namespace PhotonMapping
         template <typename Target>
         void searchWithinRadius(const Node* node, const Target& target, float r, std::vector<Point>& result) const;
 
-    public:
+      public:
         void insert(const Point& point);
 
         template <typename Target>
@@ -87,7 +87,7 @@ namespace PhotonMapping
         template <typename Iterator>
         void insert(Iterator begin, Iterator end);
     };
-}
+}  // namespace PhotonMapping
 
 #include "KDTree.tpp"
 

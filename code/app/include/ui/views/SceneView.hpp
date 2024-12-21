@@ -6,21 +6,21 @@
 
 namespace NRenderer
 {
-    class SceneView: public View
+    class SceneView : public View
     {
-    private:
+      private:
         virtual void drawBeginWindow() override;
         virtual void draw() override;
-        void cameraSetting();
-        void renderSetting();
-        void ambientSetting();
-        void componentSetting();
+        void         cameraSetting();
+        void         renderSetting();
+        void         ambientSetting();
+        void         componentSetting();
 
         int currComponentSelected;
-    public:
+
+      public:
         SceneView(const Vec2& position, const Vec2& size, UIContext& uiContext, Manager& manager);
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

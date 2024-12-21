@@ -10,14 +10,13 @@ namespace NRenderer
 {
     class Manager
     {
-    public:
-        AssetManager assetManager;
+      public:
+        AssetManager          assetManager;
         RenderSettingsManager renderSettingsManager;
-        ComponentManager componentManager;
+        ComponentManager      componentManager;
         Manager();
         ~Manager() = default;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

@@ -12,10 +12,10 @@ namespace SimplePathTracer
     using NRenderer::Vec2;
     class Sampler2d : public Sampler
     {
-    public:
-        Sampler2d() = default;
+      public:
+        Sampler2d()             = default;
         virtual Vec2 sample2d() = 0;
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

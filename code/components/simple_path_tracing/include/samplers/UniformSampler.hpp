@@ -10,18 +10,14 @@ namespace SimplePathTracer
     using namespace std;
     class UniformSampler : public Sampler1d
     {
-    private:
-        default_random_engine e;
+      private:
+        default_random_engine            e;
         uniform_real_distribution<float> u;
-    public:
-        UniformSampler()
-            : e                 ((unsigned int)time(0) + insideSeed())
-            , u                 (0, 1)
-        {}
-        float sample1d() override {
-            return u(e);
-        }
+
+      public:
+        UniformSampler() : e((unsigned int)time(0) + insideSeed()), u(0, 1) {}
+        float sample1d() override { return u(e); }
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

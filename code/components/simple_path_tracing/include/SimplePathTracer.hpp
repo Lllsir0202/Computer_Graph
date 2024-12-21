@@ -17,10 +17,10 @@ namespace SimplePathTracer
 
     class SimplePathTracerRenderer
     {
-    public:
-    private:
+      public:
+      private:
         SharedScene spScene;
-        Scene& scene;
+        Scene&      scene;
 
         unsigned int width;
         unsigned int height;
@@ -31,31 +31,29 @@ namespace SimplePathTracer
         SCam camera;
 
         vector<SharedShader> shaderPrograms;
-    public:
-        SimplePathTracerRenderer(SharedScene spScene)
-            : spScene               (spScene)
-            , scene                 (*spScene)
-            , camera                (spScene->camera)
+
+      public:
+        SimplePathTracerRenderer(SharedScene spScene) : spScene(spScene), scene(*spScene), camera(spScene->camera)
         {
-            width = scene.renderOption.width;
-            height = scene.renderOption.height;
-            depth = scene.renderOption.depth;
+            width   = scene.renderOption.width;
+            height  = scene.renderOption.height;
+            depth   = scene.renderOption.depth;
             samples = scene.renderOption.samplesPerPixel;
         }
         ~SimplePathTracerRenderer() = default;
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
         RenderResult render();
-        void release(const RenderResult& r);
+        void         release(const RenderResult& r);
 
-    private:
+      private:
         void renderTask(RGBA* pixels, int width, int height, int off, int step);
 
-        RGB gamma(const RGB& rgb);
-        RGB trace(const Ray& ray, int currDepth);
-        HitRecord closestHitObject(const Ray& r);
+        RGB                gamma(const RGB& rgb);
+        RGB                trace(const Ray& ray, int currDepth);
+        HitRecord          closestHitObject(const Ray& r);
         tuple<float, Vec3> closestHitLight(const Ray& r);
     };
-}
+}  // namespace SimplePathTracer
 
 #endif

@@ -8,12 +8,13 @@ namespace SimplePathTracer
 {
     class Lambertian : public Shader
     {
-    private:
+      private:
         Vec3 albedo;
-    public:
+
+      public:
         Lambertian(Material& material, vector<Texture>& textures);
         Scattered shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const;
     };
-}
+}  // namespace SimplePathTracer
 
 #endif
