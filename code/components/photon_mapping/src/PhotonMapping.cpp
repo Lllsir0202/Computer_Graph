@@ -293,7 +293,10 @@ namespace PhotonMapping
         {
             return;
         }
-
+        /*if (depth > 1)
+        {
+            cout << "her" << endl;
+        }*/
         // 分别得到hit点、法向量、材质
         const auto& hitpoint = hitrecord->hitPoint;
         const auto& normal = hitrecord->normal;
@@ -310,8 +313,8 @@ namespace PhotonMapping
         // 这里考虑结合法线角度和路径长度来作为依据
         // 再加上一个depth / maxdepth
         auto ndoti = glm::dot(hitrecord->normal, r.direction);
-        float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0); // -0.5 * static_cast<float>(depth) / this->depth;
-
+        float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
+        //cout << p << endl;
         // 接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0) // 表示漫反射
         {
