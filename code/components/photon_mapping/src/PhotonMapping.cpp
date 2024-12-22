@@ -86,15 +86,11 @@ namespace PhotonMapping
         // shaders
         shaderPrograms.clear();
         ShaderCreator shaderCreator{};
-        for (auto& m : scene.materials) {
-            shaderPrograms.push_back(shaderCreator.create(m, scene.textures));
-        }
-         
+        for (auto& m : scene.materials) { shaderPrograms.push_back(shaderCreator.create(m, scene.textures)); }
 
         // 局部坐标转换成世界坐标
         VertexTransformer vertexTransformer{};
         vertexTransformer.exec(spScene);
-
 
         RandomPhoton();
 
@@ -111,7 +107,6 @@ namespace PhotonMapping
         cout << "Finish building KD_tree..." << endl;
 
         RGBA* pixels = new RGBA[width * height]{};
-
 
         /*getServer().logger.log("Current photon num is " + to_string(this->photonnum) + "\n");
         getServer().logger.log("Current width is " + to_string(this->width) + "\n");*/
@@ -232,78 +227,74 @@ namespace PhotonMapping
         return {closest->t, v};
     }
 
-    RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
+RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
     {
-        // cout << currDepth << endl;
-        if (currDepth == depth) return scene.ambient.constant;
+        if (currDepth >= depth) return scene.ambient.constant;
+
         auto hitObject    = closestHitObject(r);
         auto [t, emitted] = closestHitLight(r);
-        // hit object
 
         if (hitObject && hitObject->t < t)
         {
-            auto  mtlHandle    = hitObject->material;
-            auto  scattered    = shaderPrograms[mtlHandle.index()]->shade(r, hitObject->hitPoint, hitObject->normal);
-            auto  scatteredRay = scattered.ray;
-            auto  attenuation  = scattered.attenuation;
-            auto  emitted      = scattered.emitted;
-            auto  next         = trace(scatteredRay, currDepth + 1);
-            float n_dot_in     = glm::dot(hitObject->normal, scatteredRay.direction);
-            float pdf          = scattered.pdf;
-            /**
-             * emitted      - Le(p, w_0)
-             * next         - Li(p, w_i)
-             * n_dot_in     - cos<n, w_i>
-             * atteunation  - BRDF
-             * pdf          - p(w)
-             **/
+            auto mtlHandle    = hitObject->material;
+            auto scattered    = shaderPrograms[mtlHandle.index()]->shade(r, hitObject->hitPoint, hitObject->normal);
+            auto scatteredRay = scattered.ray;
+            auto attenuation  = scattered.attenuation;
+            auto scattered_emitted = scattered.emitted;
+            auto next = trace(scatteredRay, currDepth + 1);
+            float n_dot_in = glm::dot(hitObject->normal, scatteredRay.direction);
+            float pdf      = scattered.pdf;
 
+            // 直接照明
             Vec3 directLighting(0.0f);
             for (const auto& light : scene.areaLightBuffer)
             {
-                auto [radiance, pdf] = sampleDirectLighting(hitObject, light);
+                auto [radiance, pdf_light] = sampleDirectLighting(hitObject, light);
                 directLighting += scattered.attenuation * radiance;
             }
 
-            RGB              indirectLighting(0.0f);
-            const float      P_RR = 0.8f;
-            //static const int k    = 50;
-            if (Russian_Roulette(P_RR))
+            // 间接照明
+            RGB         indirectLighting(0.0f);
+            auto nearPhotons = kdtree->kNearest(hitObject->hitPoint, photoniters);
+            float       size        = nearPhotons.size();
+
+            if (!nearPhotons.empty())
             {
-                auto nearPhotons = kdtree->kNearest(hitObject->hitPoint, photoniters);
-
-                if (!nearPhotons.empty())
+                float maxDist = 0.0f;
+                for (const auto& photon : nearPhotons)
+                    maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
+                for (const auto& photon : nearPhotons)
                 {
-                    float maxDist = 0.0f;
-                    for (const auto& photon : nearPhotons)
-                        maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
+                    float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
+                    float weight = 1.0f - (dist * dist) / (maxDist * maxDist);  // 或使用高斯衰减
 
-                    for (const auto& photon : nearPhotons)
-                    {
-                        float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
-                        float weight = 1.0f - (dist * dist) / (maxDist * maxDist);
-
-                        float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
-                        if (cos_theta <= 0.0f) continue;
-                        indirectLighting +=
-                            photon.GetPower() * weight * scattered.attenuation * cos_theta / (PI * maxDist * maxDist);
-                    }
-                    indirectLighting /= P_RR;
+                    float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
+                    if (cos_theta <= 0.0f) continue;
+                    indirectLighting +=
+                        photon.GetPower() * weight * scattered.attenuation * cos_theta / (PI * maxDist * maxDist);
                 }
             }
+            
+            // 如果漫反射到光源，则不能计算
+            auto NextHitobject = closestHitObject(scatteredRay);
+            if (NextHitobject && spScene->materials[NextHitobject->material.index()].type == 0)
+            {
+                indirectLighting += gamma(next) / size;  // 加入后续光照的处理
+            }
 
-            return scattered.emitted + directLighting + indirectLighting;
+            RGB finalColor = scattered_emitted + directLighting + indirectLighting + attenuation * next;
+            return glm::clamp(finalColor, Vec3(0.0f), Vec3(1.0f));
         }
-        else if (t != FLOAT_INF) { return emitted; }
+        else if (t != FLOAT_INF) { return glm::clamp(emitted, Vec3(0.0f), Vec3(1.0f)); }
         return Vec3(0.0f);
     }
 
     void PhotonMappingRenderer::RandomPhoton()
     {
         getServer().logger.log("Start to Random Shoot Photon...");
- 
+
         // 对面光源上进行光子数目个采样
-        //for(int j = 0; j < 5 ; j++)
+        // for(int j = 0; j < 5 ; j++)
         {
             for (auto& area : scene.areaLightBuffer)
             {
@@ -342,23 +333,24 @@ namespace PhotonMapping
 
         getServer().logger.log("Photon mapping complete. Total photons: " + std::to_string(Photons.size()));
     }
-    //static int num = 0;
-    //static int num1 = 0;
-    //static int num2 = 0;
-    //static int num3 = 0;
-    // 用于追踪随机发射的光子
+    // static int num = 0;
+    // static int num1 = 0;
+    // static int num2 = 0;
+    // static int num3 = 0;
+    //  用于追踪随机发射的光子
     void PhotonMappingRenderer::TracePhoton(const Ray& r, const RGB& power, unsigned depth)
     {
         // getServer().logger.log("Current Depth is " + to_string(depth) + "/" + to_string(this->depth) + "\n");
         if (depth > this->depth) { return; }
-        //cout << "Total is " << num++ << endl;
-        // 找到最近的hitobject   ->  后续可以改进对是否命中的判断，添加包围
+        // cout << "Total is " << num++ << endl;
+        //  找到最近的hitobject   ->  后续可以改进对是否命中的判断，添加包围
         HitRecord hitrecord = closestHitObject(r);
         // 如果没有hit，那么返回
-        if (!hitrecord) { 
+        if (!hitrecord)
+        {
             /*cout << " Current Ray is " << r.direction << endl;
             cout << "Not Hit !!!???" << num << endl;*/
-            return; 
+            return;
         }
         /*if (depth > 1)
         {
@@ -372,25 +364,24 @@ namespace PhotonMapping
         // 得到打在hitobject上后的光线
         const auto scatter = shaderPrograms[material.index()]->shade(r, hitpoint, normal);
 
-
         // 使用亮度作为轮盘赌的参数
         // float L = 0.2126 * power.r + 0.7152 * power.g + 0.0722 * power.b;
         // 不知道为何，这里的RGB并不是0-1(?)
         // 所以使用亮度不太合适了
         // 这里考虑结合法线角度和路径长度来作为依据
         // 再加上一个depth / maxdepth
-         auto ndoti = glm::dot(hitrecord->normal, r.direction);
-         float p = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
-        //float p = 0.9;
-        // cout << p << endl;
+        auto  ndoti = glm::dot(hitrecord->normal, r.direction);
+        float p     = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
+        // float p = 0.9;
+        //  cout << p << endl;
         /*cout << spScene->materials[material.index()].type << endl;*/
         //  接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0)  // 表示漫反射
         {
-            //cout << " Lab is " << num1++ << endl;
-            // 漫反射需要记录光子
+            // cout << " Lab is " << num1++ << endl;
+            //  漫反射需要记录光子
             photon Photon(hitpoint, power, r, scatter.ray);
-            //cout << hitpoint << endl;
+            // cout << hitpoint << endl;
             Photons.push_back(Photon);
 
             // 根据轮盘赌策略计算是否继续
@@ -399,13 +390,13 @@ namespace PhotonMapping
                 // 计算新的ray和power
                 // 漫反射的光强与表面法线相关
                 auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
-                RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * p);
+                RGB  newpower  = power * scatter.attenuation * cos_thera / (scatter.pdf * p);
 
                 auto newray = scatter.ray;
-                //cout << "attenuation is " << scatter.attenuation << endl;
-                //cout << "cos_thera is " << cos_thera << endl;
-                //cout << "pdf is " << scatter.pdf << endl;
-                //cout << "newpower is : R " << newpower.r << " G " << newpower.g << " B " << newpower.b << endl;
+                // cout << "attenuation is " << scatter.attenuation << endl;
+                // cout << "cos_thera is " << cos_thera << endl;
+                // cout << "pdf is " << scatter.pdf << endl;
+                // cout << "newpower is : R " << newpower.r << " G " << newpower.g << " B " << newpower.b << endl;
                 TracePhoton(newray, newpower, depth + 1);
             }
         }
@@ -413,7 +404,7 @@ namespace PhotonMapping
         // 如果是镜面的话，那么只有反射没有散射
         if (spScene->materials[material.index()].type == 3)  // 表示镜面反射(即导体)
         {
-            //cout << num2++ << endl;
+            // cout << num2++ << endl;
 
             if (Russian_Roulette(p))
             {
@@ -431,7 +422,7 @@ namespace PhotonMapping
         // 如果是电介质的话，可能会同时存在折射和散射
         if (spScene->materials[material.index()].type == 2)  // 表示电介质
         {
-            //cout << num3++ << endl;
+            // cout << num3++ << endl;
 
             // 采用俄罗斯轮盘赌决定处理散射还是折射
             if (Russian_Roulette(p))
@@ -448,37 +439,8 @@ namespace PhotonMapping
             }
         }
 
-        //getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
+        // getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
     }
-
-    // 用于计算hitpoint提供的间接光强
-    //  合并在trace中处理了
-    //RGB PhotonMappingRenderer::EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit)
-    //{
-    //    RGB IndirectPower = { 0.f,0.f,0.f };
-    //    const auto& Scatter = shaderPrograms[Hit->material.index()]->shade(r, Hit->hitPoint, Hit->normal);
-    //    float num = 10.0;
-    //    //const auto& photons = kdtree->withinRadius(Hit->hitPoint, radius);
-    //    const auto& photons = kdtree->kNearest(Hit->hitPoint, num);
-
-    //    const auto& radius = glm::distance(photons.back().GetPosition(), Hit->hitPoint);
-
-
-    //    //cout << photons.size() << endl;
-    //    for (auto& photon : photons)
-    //    {
-    //        // 首先计算光子位置到Hitpoint的方向向量
-    //        const auto& pos_vec = glm::normalize(photon.GetPosition() - r.direction);
-    //        // 计算光子和法向量的cos
-    //        const auto& cos_thera = glm::dot(pos_vec, Hit->normal);
-
-    //        // 表示在背面，所以继续
-    //        if (cos_thera < 0.f) { continue; }
-
-    //        IndirectPower += photon.GetPower() * Scatter.attenuation * cos_thera;
-    //    }
-    //    return IndirectPower / Scatter.pdf;
-    //}
 
     tuple<Vec3, Vec3> PhotonMappingRenderer::sampleOnLight(const AreaLight& light_source)
     {
@@ -512,4 +474,5 @@ namespace PhotonMapping
 
         return {radiance, pdf_light};
     }
+
 }  // namespace PhotonMapping

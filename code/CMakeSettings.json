@@ -10,7 +10,13 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "variables": []
+      "variables": [
+        {
+          "name": "CMAKE_INSTALL_PREFIX",
+          "value": "D:/Computer_Graph//Computer_Graph/code/out/install/x64-Debug (默认值)",
+          "type": "PATH"
+        }
+      ]
     },
     {
       "name": "x64-Release",
@@ -21,8 +27,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "variables": []
+      "inheritEnvironments": [ "msvc_x64_x64" ]
     }
   ]
 }
