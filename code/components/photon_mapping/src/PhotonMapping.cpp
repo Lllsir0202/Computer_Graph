@@ -255,29 +255,31 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
 
             // 间接照明
             RGB         indirectLighting(0.0f);
-            const float P_RR = 0.8f;
-            if (Russian_Roulette(P_RR))
+            auto nearPhotons = kdtree->kNearest(hitObject->hitPoint, photoniters);
+            float       size        = nearPhotons.size();
+
+            if (!nearPhotons.empty())
             {
-                auto nearPhotons = kdtree->kNearest(hitObject->hitPoint, photoniters);
-
-                if (!nearPhotons.empty())
+                float maxDist = 0.0f;
+                for (const auto& photon : nearPhotons)
+                    maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
+                for (const auto& photon : nearPhotons)
                 {
-                    float maxDist = 0.0f;
-                    for (const auto& photon : nearPhotons)
-                        maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
+                    float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
+                    float weight = 1.0f - (dist * dist) / (maxDist * maxDist);  // 或使用高斯衰减
 
-                    for (const auto& photon : nearPhotons)
-                    {
-                        float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
-                        float weight = 1.0f - (dist * dist) / (maxDist * maxDist);  // 或使用高斯衰减
-
-                        float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
-                        if (cos_theta <= 0.0f) continue;
-                        indirectLighting +=
-                            photon.GetPower() * weight * scattered.attenuation * cos_theta / (PI * maxDist * maxDist);
-                    }
-                    indirectLighting /= P_RR;
+                    float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
+                    if (cos_theta <= 0.0f) continue;
+                    indirectLighting +=
+                        photon.GetPower() * weight * scattered.attenuation * cos_theta / (PI * maxDist * maxDist);
                 }
+            }
+            
+            // 如果漫反射到光源，则不能计算
+            auto NextHitobject = closestHitObject(scatteredRay);
+            if (NextHitobject && spScene->materials[NextHitobject->material.index()].type == 0)
+            {
+                indirectLighting += gamma(next) / size;  // 加入后续光照的处理
             }
 
             RGB finalColor = scattered_emitted + directLighting + indirectLighting + attenuation * next;
@@ -472,4 +474,5 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
 
         return {radiance, pdf_light};
     }
+
 }  // namespace PhotonMapping
