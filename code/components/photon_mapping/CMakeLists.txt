@@ -6,7 +6,7 @@ set(MY_COMPONENT_NAME "PhotonMapping")
 file(GLOB_RECURSE COMP_HEADER_FILES "./include/*.h" "./include/*.hpp")
 source_group("Header Files" FILES ${COMP_HEADER_FILES})
 file(GLOB_RECURSE COMP_SOURCE_FILES "./src/*.cpp")
-add_library(${MY_COMPONENT_NAME} SHARED "${COMP_SOURCE_FILES}" "${COMP_HEADER_FILES}")
+add_library(${MY_COMPONENT_NAME} SHARED "${COMP_SOURCE_FILES}" "${COMP_HEADER_FILES}" "src/BoundingVolume/AABB.cpp")
 target_link_libraries(${MY_COMPONENT_NAME} NRServer)
 
 include_directories("./include")
