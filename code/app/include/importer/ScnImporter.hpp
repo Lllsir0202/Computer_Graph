@@ -8,15 +8,16 @@
 namespace NRenderer
 {
     using namespace std;
-    class ScnImporter: public Importer
+    class ScnImporter : public Importer
     {
-    private:
+      private:
         bool parseMtl(Asset& asset, ifstream& file, map<string, size_t>& mtlMap);
         bool parseMdl(Asset& asset, ifstream& file, map<string, size_t>& mtlMap);
         bool parseLgt(Asset& asset, ifstream& file);
-    public:
+
+      public:
         virtual bool import(Asset& asset, const string& path) override;
     };
-}
+}  // namespace NRenderer
 
 #endif

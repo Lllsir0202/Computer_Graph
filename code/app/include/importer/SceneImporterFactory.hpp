@@ -14,25 +14,27 @@ namespace NRenderer
     using namespace std;
     class SceneImporterFactory
     {
-    private:
+      private:
         unordered_map<string, SharedImporter> importerMap;
-    public:
-        static SceneImporterFactory& instance() {
+
+      public:
+        static SceneImporterFactory& instance()
+        {
             static SceneImporterFactory f;
             return f;
         }
-        SceneImporterFactory() {
+        SceneImporterFactory()
+        {
             importerMap["scn"] = make_shared<ScnImporter>();
             importerMap["obj"] = make_shared<ObjImporter>();
         }
-        SharedImporter importer(const string& ext) {
+        SharedImporter importer(const string& ext)
+        {
             auto it = importerMap.find(ext);
-            if (it!=importerMap.end()) {
-                return it->second;
-            }
+            if (it != importerMap.end()) { return it->second; }
             return nullptr;
         }
     };
-}
+}  // namespace NRenderer
 
 #endif

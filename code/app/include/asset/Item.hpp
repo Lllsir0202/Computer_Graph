@@ -11,15 +11,13 @@ namespace NRenderer
     struct Item
     {
         string name;
-        Item()
-            : name      ("undefined")
-        {}
+        Item() : name("undefined") {}
     };
     struct GlDrawData
     {
         vector<Vec3> positions;
     };
     SHARE(GlDrawData);
-}
+}  // namespace NRenderer
 
 #endif

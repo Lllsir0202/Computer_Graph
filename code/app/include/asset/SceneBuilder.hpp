@@ -10,29 +10,31 @@ namespace NRenderer
 {
     class SceneBuilder
     {
-    private:
-    protected:
-        const Asset& asset;
-        const RenderSettings& renderSettings;
-        const Camera& camera;
+      private:
+      protected:
+        const Asset&           asset;
+        const RenderSettings&  renderSettings;
+        const Camera&          camera;
         const AmbientSettings& ambientSettings;
-        SharedScene scene;
-        void buildRenderOption();
-        void buildBuffer();
-        void buildCamera();
-        void buildAmbient();
-        bool success;
-    public:
-        SceneBuilder(const Asset& asset, const RenderSettings& renderSettings, const AmbientSettings& ambientSettings, const Camera& camera)
-            : asset             (asset)
-            , renderSettings    (renderSettings)
-            , ambientSettings   (ambientSettings)
-            , camera            (camera)
-            , scene             (nullptr)
-            , success           (true)
+        SharedScene            scene;
+        void                   buildRenderOption();
+        void                   buildBuffer();
+        void                   buildCamera();
+        void                   buildAmbient();
+        bool                   success;
+
+      public:
+        SceneBuilder(const Asset& asset, const RenderSettings& renderSettings, const AmbientSettings& ambientSettings,
+            const Camera& camera)
+            : asset(asset),
+              renderSettings(renderSettings),
+              ambientSettings(ambientSettings),
+              camera(camera),
+              scene(nullptr),
+              success(true)
         {}
         SharedScene build();
     };
-}
+}  // namespace NRenderer
 
 #endif

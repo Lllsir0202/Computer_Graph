@@ -20,24 +20,18 @@ namespace NRenderer
         unsigned int photonnum;
         // 添加下迭代次数(?)maybe unused
         unsigned int photoniters;
-        RenderOption()
-            : width             (500)
-            , height            (500)
-            , depth             (4)
-            , samplesPerPixel   (16)
-            , photonnum         (100000)
-            , photoniters       (10)
-        {}
+        RenderOption() : width(500), height(500), depth(4), samplesPerPixel(16), photonnum(100000), photoniters(10) {}
     };
 
     struct Ambient
     {
         enum class Type
         {
-            CONSTANT, ENVIROMENT_MAP
+            CONSTANT,
+            ENVIROMENT_MAP
         };
-        Type type;
-        Vec3 constant = {};
+        Type   type;
+        Vec3   constant       = {};
         Handle environmentMap = {};
     };
 
@@ -51,25 +45,24 @@ namespace NRenderer
 
         // buffers
         vector<Material> materials;
-        vector<Texture> textures;
+        vector<Texture>  textures;
 
         vector<Model> models;
-        vector<Node> nodes;
+        vector<Node>  nodes;
         // object buffer
-        vector<Sphere> sphereBuffer;
+        vector<Sphere>   sphereBuffer;
         vector<Triangle> triangleBuffer;
-        vector<Plane> planeBuffer;
-        vector<Mesh> meshBuffer;
+        vector<Plane>    planeBuffer;
+        vector<Mesh>     meshBuffer;
 
         vector<Light> lights;
         // light buffer
-        vector<PointLight> pointLightBuffer;
-        vector<AreaLight> areaLightBuffer;
+        vector<PointLight>       pointLightBuffer;
+        vector<AreaLight>        areaLightBuffer;
         vector<DirectionalLight> directionalLightBuffer;
-        vector<SpotLight> spotLightBuffer;
+        vector<SpotLight>        spotLightBuffer;
     };
     using SharedScene = shared_ptr<Scene>;
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

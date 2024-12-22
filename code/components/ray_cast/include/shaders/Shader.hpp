@@ -15,17 +15,15 @@ namespace RayCast
 
     class Shader
     {
-    protected:
-        Material& material;
+      protected:
+        Material&        material;
         vector<Texture>& textureBuffer;
-    public:
-        Shader(Material& material, vector<Texture>& textures)
-            : material              (material)
-            , textureBuffer         (textures)
-        {}
+
+      public:
+        Shader(Material& material, vector<Texture>& textures) : material(material), textureBuffer(textures) {}
         virtual RGB shade(const Vec3& in, const Vec3& out, const Vec3& normal) const = 0;
     };
     SHARE(Shader);
-}
+}  // namespace RayCast
 
 #endif

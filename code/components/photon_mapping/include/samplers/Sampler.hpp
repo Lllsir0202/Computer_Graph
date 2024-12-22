@@ -9,19 +9,21 @@ namespace PhotonMapping
     using std::mutex;
     class Sampler
     {
-    protected:
-        static int insideSeed() {
+      protected:
+        static int insideSeed()
+        {
             static mutex m;
-            static int seed = 0;
+            static int   seed = 0;
             m.lock();
             seed++;
             m.unlock();
             return seed;
         }
-    public:
+
+      public:
         virtual ~Sampler() = default;
-        Sampler() = default;
+        Sampler()          = default;
     };
-}
+}  // namespace PhotonMapping
 
 #endif

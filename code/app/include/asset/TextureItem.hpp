@@ -10,9 +10,8 @@ namespace NRenderer
     struct TextureItem : public Item
     {
         SharedTexture texture;
-        GlImageId glId;
+        GlImageId     glId;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

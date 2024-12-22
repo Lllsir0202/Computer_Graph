@@ -10,15 +10,13 @@ namespace NRenderer
     using namespace std;
     struct LightItem : public Item
     {
-        GlId glVAO{0};
-        GlId glVBO{0};
-        GlId glEBO{0};
-        SharedLight light;
+        GlId             glVAO{0};
+        GlId             glVBO{0};
+        GlId             glEBO{0};
+        SharedLight      light;
         SharedGlDrawData externalDrawData;
     };
-    
-    
-} // namespace NRenderer
 
+}  // namespace NRenderer
 
 #endif

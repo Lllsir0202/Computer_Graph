@@ -18,7 +18,7 @@ namespace NRenderer
     using namespace std;
     class DLL_EXPORT Logger
     {
-    public:
+      public:
         enum class LogType
         {
             NORMAL,
@@ -29,25 +29,21 @@ namespace NRenderer
         struct LogText
         {
             LogType type;
-            string message;
+            string  message;
             LogText() = delete;
-            LogText(const string& str)
-                : type          (LogType::NORMAL)
-                , message       (str)
-            {}
-            LogText(LogType type, const string& str)
-                : type          (type)
-                , message       (str)
-            {}
+            LogText(const string& str) : type(LogType::NORMAL), message(str) {}
+            LogText(LogType type, const string& str) : type(type), message(str) {}
         };
-    private:
+
+      private:
         vector<LogText> msgs;
-        mutex   mtx;
-    public:
+        mutex           mtx;
+
+      public:
         Logger();
-        ~Logger() = default;
+        ~Logger()             = default;
         Logger(const Logger&) = delete;
-        Logger(Logger&&) = delete;
+        Logger(Logger&&)      = delete;
 
         void log(const string& msg, LogType type);
 
@@ -70,7 +66,6 @@ namespace NRenderer
         LogMessages get();
     };
     using SharedLogger = shared_ptr<Logger>;
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

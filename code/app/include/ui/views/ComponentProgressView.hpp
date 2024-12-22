@@ -6,18 +6,19 @@
 
 namespace NRenderer
 {
-   class ComponentProgressView: public View
-   {
-    private:
+    class ComponentProgressView : public View
+    {
+      private:
         virtual void drawSetup();
         virtual void drawFinish();
         virtual void drawPosAndSize();
         virtual void drawBeginWindow();
         virtual void drawEndWindow();
         virtual void draw();
-    public:
+
+      public:
         using View::View;
-   };
-}
+    };
+}  // namespace NRenderer
 
 #endif

@@ -1,7 +1,6 @@
 #include "component/RenderComponent.hpp"
 #include "server/Server.hpp"
 
-
 namespace RenderExample
 {
     using namespace std;
@@ -10,16 +9,19 @@ namespace RenderExample
     // 继承RenderComponent, 复写render接口
     class Adapter : public RenderComponent
     {
-        void render(SharedScene spScene) {
+        void render(SharedScene spScene)
+        {
             getServer().logger.log("Simply Output some color");
             _sleep(1000);
 
-            int height = spScene->renderOption.height;
-            int width = spScene->renderOption.width;
-            RGBA* pixels = new RGBA[height*width]{};
-            for (int i=0; i<height; i++) {
-                for (int j=0; j<width; j++) {
-                    pixels[i*width+j] = {float(i)/float(height), float(j)/float(width), 1.f, 1.f};
+            int   height = spScene->renderOption.height;
+            int   width  = spScene->renderOption.width;
+            RGBA* pixels = new RGBA[height * width]{};
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j < width; j++)
+                {
+                    pixels[i * width + j] = {float(i) / float(height), float(j) / float(width), 1.f, 1.f};
                 }
             }
             // 输出颜色
@@ -33,7 +35,7 @@ namespace RenderExample
             getServer().logger.error("error...");
         }
     };
-}
+}  // namespace RenderExample
 
 // REGISTER_RENDERER(Name, Description, Class)
 REGISTER_RENDERER(Example, "Simply output some color. (This is description)", RenderExample::Adapter);

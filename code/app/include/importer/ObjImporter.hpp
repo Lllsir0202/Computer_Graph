@@ -10,13 +10,14 @@
 namespace NRenderer
 {
     using namespace std;
-    class ObjImporter: public Importer
+    class ObjImporter : public Importer
     {
-    private:
+      private:
         bool parseMtl(Asset& asset, const string& path, ifstream& file, unordered_map<string, size_t>& mtlMap);
-    public:
+
+      public:
         virtual bool import(Asset& asset, const string& path) override;
     };
-}
+}  // namespace NRenderer
 
 #endif

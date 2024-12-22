@@ -8,20 +8,16 @@
 namespace PhotonMapping
 {
     using namespace std;
-    class UniformInSquare: public Sampler2d
+    class UniformInSquare : public Sampler2d
     {
-    private:
-        default_random_engine e;
+      private:
+        default_random_engine            e;
         uniform_real_distribution<float> u;
-    public:
-        UniformInSquare()
-            : e               ((unsigned int)time(0) + insideSeed())
-            , u               (-1, 1)
-        {}
-        Vec2 sample2d() override {
-            return {u(e), u(e)};
-        }
+
+      public:
+        UniformInSquare() : e((unsigned int)time(0) + insideSeed()), u(-1, 1) {}
+        Vec2 sample2d() override { return {u(e), u(e)}; }
     };
-}
+}  // namespace PhotonMapping
 
 #endif

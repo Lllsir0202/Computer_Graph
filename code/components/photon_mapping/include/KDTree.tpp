@@ -29,7 +29,7 @@ namespace PhotonMapping
     {
         if (points.empty()) return 0.0f;
 
-        float sum = 0.0f;
+        float sum    = 0.0f;
         float sum_sq = 0.0f;
         for (const auto& point : points)
         {
@@ -38,7 +38,7 @@ namespace PhotonMapping
             sum_sq += val * val;
         }
         float mean = sum / points.size();
-        float var = (sum_sq / points.size()) - (mean * mean);
+        float var  = (sum_sq / points.size()) - (mean * mean);
         return var;
     }
 
@@ -46,14 +46,14 @@ namespace PhotonMapping
     int KDTree<Point, K>::chooseSplit(const std::vector<Point>& points) const
     {
         float max_variance = -1.0f;
-        int   best_axis = 0;
+        int   best_axis    = 0;
         for (int i = 0; i < K; ++i)
         {
             float var = variance(points, i);
             if (var > max_variance)
             {
                 max_variance = var;
-                best_axis = i;
+                best_axis    = i;
             }
         }
         return best_axis;
@@ -71,12 +71,12 @@ namespace PhotonMapping
             });
 
         size_t median_idx = points.size() / 2;
-        Node* node = new Node(points[median_idx], axis);
+        Node*  node       = new Node(points[median_idx], axis);
 
         std::vector<Point> left_points(points.begin(), points.begin() + median_idx);
         std::vector<Point> right_points(points.begin() + median_idx + 1, points.end());
 
-        node->left = buildTree(left_points, depth + 1);
+        node->left  = buildTree(left_points, depth + 1);
         node->right = buildTree(right_points, depth + 1);
 
         return node;
@@ -113,17 +113,18 @@ namespace PhotonMapping
         if (!node) return;
 
         float dist = distance(node->point, target);
-        if (heap.size() < static_cast<size_t>(k)) heap.push(HeapItem{ dist, node->point });
+        if (heap.size() < static_cast<size_t>(k))
+            heap.push(HeapItem{dist, node->point});
         else if (dist < heap.top().distance)
         {
             heap.pop();
-            heap.push(HeapItem{ dist, node->point });
+            heap.push(HeapItem{dist, node->point});
         }
 
         int         axis = node->axis;
         float       diff = target[axis] - node->point[axis];
         const Node* near = diff < 0 ? node->left : node->right;
-        const Node* far = diff < 0 ? node->right : node->left;
+        const Node* far  = diff < 0 ? node->right : node->left;
 
         searchKNearest(near, target, k, heap);
 
@@ -144,7 +145,7 @@ namespace PhotonMapping
         int         axis = node->axis;
         float       diff = target[axis] - node->point[axis];
         const Node* near = diff < 0 ? node->left : node->right;
-        const Node* far = diff < 0 ? node->right : node->left;
+        const Node* far  = diff < 0 ? node->right : node->left;
 
         searchWithinRadius(near, target, r, result);
 
@@ -196,6 +197,6 @@ namespace PhotonMapping
     {
         for (auto it = begin; it != end; ++it) insert(*it);
     }
-}
+}  // namespace PhotonMapping
 
 #endif

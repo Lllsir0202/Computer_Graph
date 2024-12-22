@@ -8,11 +8,11 @@
 namespace NRenderer
 {
     using namespace std;
-    struct DLL_EXPORT Instance: public enable_shared_from_this<Instance>
+    struct DLL_EXPORT Instance : public enable_shared_from_this<Instance>
     {
         virtual ~Instance() = default;
     };
     using SharedInstance = shared_ptr<Instance>;
-}
+}  // namespace NRenderer
 
 #endif

@@ -8,13 +8,13 @@ namespace NRenderer
 {
     class LogView : public View
     {
-    protected:
+      protected:
         virtual void draw() override;
         virtual void drawBeginWindow() override;
-    public:
+
+      public:
         using View::View;
     };
-} // namespace NRenderer
-
+}  // namespace NRenderer
 
 #endif

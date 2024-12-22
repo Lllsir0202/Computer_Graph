@@ -17,15 +17,13 @@ namespace NRenderer
 
     struct NodeItem : public Item
     {
-        GlId glVAO{0};
-        GlId glVBO{0};
-        GlId glEBO{0};
-        SharedNode node{nullptr};
+        GlId             glVAO{0};
+        GlId             glVBO{0};
+        GlId             glEBO{0};
+        SharedNode       node{nullptr};
         SharedGlDrawData externalDrawData{nullptr};
     };
-    
-    
-} // namespace NRenderer
 
+}  // namespace NRenderer
 
 #endif
