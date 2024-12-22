@@ -94,7 +94,7 @@ namespace PhotonMapping
 
         // 用于估计光子提供的间接光照强度
         // 根据传入的hitpoint，查询到一定范围内的光子，并返回间接光照强度
-        RGB EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit);
+        //RGB EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit);
 
         tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
