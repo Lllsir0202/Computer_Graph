@@ -7,6 +7,7 @@
 #include "UniformSampler.hpp"
 #include "UniformInCircle.hpp"
 #include "UniformInSquare.hpp"
+#include "CosweightSampler.hpp"
 
 namespace PhotonMapping
 {

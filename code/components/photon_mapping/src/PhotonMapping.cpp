@@ -42,7 +42,7 @@ namespace PhotonMapping
 
         // 生成随机数
         float rand = dist(rng);
-        return rand > p;
+        return rand < p;
     }
 
     RGB PhotonMappingRenderer::gamma(const RGB& rgb) {
@@ -76,7 +76,9 @@ namespace PhotonMapping
         for (auto& m : scene.materials) {
             shaderPrograms.push_back(shaderCreator.create(m, scene.textures));
         }
+         
         RandomPhoton();
+
         getServer().logger.log("Finish Random Emit photons...");
 
         // 建立kdtree
@@ -88,7 +90,7 @@ namespace PhotonMapping
 
         // 确认建立完成
         getServer().logger.log("Finish building KD_tree..."); 
-            cout << "Finish building KD_tree..." << endl;
+        cout << "Finish building KD_tree..." << endl;
 
         RGBA* pixels = new RGBA[width*height]{};
 
@@ -240,7 +242,8 @@ namespace PhotonMapping
                 refrac_res += refraction_next * abs(r_n_dot_in) * scattered.r_attenuation / scattered.r_pdf;
             }
             RGB IndirectPow = EstimateIndirectRadiance(r, hitObject);
-            return emitted + attenuation * next * n_dot_in / pdf + refrac_res + IndirectPow;
+            cout << "Indirect pow is " << IndirectPow << endl;
+            return emitted + attenuation * next * n_dot_in / pdf + refrac_res + IndirectPow * n_dot_in;
         }
         // 
         else if (t != FLOAT_INF) {
@@ -264,7 +267,9 @@ namespace PhotonMapping
 
                 // 接下来需要计算面光源发出光线的随机方向
                 // 这里先使用实现好的半球，后面考虑重新实现一个余弦加权随机
-                Vec3 Local_dir = defaultSamplerInstance<HemiSphere>().sample3d();
+                //Vec3 Local_dir = defaultSamplerInstance<HemiSphere>().sample3d();
+                // 采用余弦加权采样
+                Vec3 Local_dir = defaultSamplerInstance<CosWeightSphere>().sample3d();
 
                 // 转换之前我们需要知道面光源的法向量
                 Vec3 AreaLight_normal = glm::normalize(glm::cross(area.u, area.v));
@@ -277,6 +282,9 @@ namespace PhotonMapping
                 // 由于面光源的radiance是光源在单位立体角和单位面积上的发射功率
                 // 所以我们还需要再除以一个PI
                 RGB Power = (area.radiance * AreaLight_Area) / ((static_cast<float>(photonnum) * PI));
+                
+                // 这里的rgb是没有问题的
+                //cout << "power is : R " << Power.r << " G " << Power.g << " B " << Power.b << endl;
 
                 // 得到光
                 Ray r(Position, World_dir);
@@ -343,6 +351,10 @@ namespace PhotonMapping
                 // 漫反射的光强与表面法线相关
                 auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
                 RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * p);
+                cout << "attenuation is " << scatter.attenuation << endl;
+                cout << "cos_thera is " << cos_thera << endl;
+                cout << "pdf is " << scatter.pdf << endl;
+                cout << "newpower is : R " << newpower.r << " G " << newpower.g << " B " << newpower.b << endl;
                 TracePhoton(scatter.ray, newpower, depth + 1);
             }
         }
@@ -373,11 +385,9 @@ namespace PhotonMapping
                 RGB newpower = power * scatter.r_attenuation / scatter.r_pdf;
 
                 TracePhoton(scatter.r_ray, newpower, depth + 1);
-            }
-            else
-            {
+
                 // 处理反射
-                RGB newpower = power * scatter.attenuation / scatter.pdf;
+                newpower = power * scatter.attenuation / scatter.pdf;
 
                 TracePhoton(scatter.ray, newpower, depth + 1);
             }
@@ -391,11 +401,14 @@ namespace PhotonMapping
     {
         RGB IndirectPower = { 0.f,0.f,0.f };
         const auto& Scatter = shaderPrograms[Hit->material.index()]->shade(r, Hit->hitPoint, Hit->normal);
-        float radius = 10.0;
+        float num = 10.0;
         //const auto& photons = kdtree->withinRadius(Hit->hitPoint, radius);
-        const auto& photons = kdtree->kNearest(Hit->hitPoint, radius);
+        const auto& photons = kdtree->kNearest(Hit->hitPoint, num);
 
-        cout << photons.size() << endl;
+        const auto& radius = glm::distance(photons.back().GetPosition(), Hit->hitPoint);
+
+
+        //cout << photons.size() << endl;
         for (auto& photon : photons)
         {
             // 首先计算光子位置到Hitpoint的方向向量
@@ -409,10 +422,11 @@ namespace PhotonMapping
                 continue;
             }
 
-            IndirectPower += photon.GetPower() * Scatter.attenuation * cos_thera;
-
+            // 得到平均入射光方向
+            IndirectPower += photon.GetPower();
+            //cout << "IndirectPower is: R " << IndirectPower.r << "G " << IndirectPower.g << "B " << IndirectPower.b << endl;
         }
-        return IndirectPower;
+        return IndirectPower * Scatter.attenuation / Scatter.pdf;
     }
 }
 
