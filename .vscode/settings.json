@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.sy": "c",
+        "numeric": "cpp",
+        "*.ipp": "cpp",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "format": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp",
+        "cmath": "cpp"
+    }
+}
