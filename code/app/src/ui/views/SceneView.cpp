@@ -41,7 +41,8 @@ namespace NRenderer
         ImGui::InputScalar("Depth", ImGuiDataType_U32, &rs.depth, &intStep, NULL, "%u");
         ImGui::InputScalar("Sample Nums", ImGuiDataType_U32, &rs.samplesPerPixel, &intStep, NULL, "%u");
         ImGui::InputScalar("Photon Nums", ImGuiDataType_U32, &rs.PhotonNums, &intStep, NULL, "%u");
-        ImGui::InputScalar("Iter nums", ImGuiDataType_U32, &rs.PhotonIters, &intStep, NULL, "%u");
+        ImGui::InputScalar("Sample photons", ImGuiDataType_U32, &rs.PhotonIters, &intStep, NULL, "%u");
+        ImGui::Selectable("If caustic", &rs.ifcaustic);
     }
     void SceneView::ambientSetting()
     {

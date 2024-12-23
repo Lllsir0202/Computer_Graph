@@ -38,17 +38,27 @@ namespace PhotonMapping
         unsigned int depth;
         unsigned int samples;
 
+        // 添加一个选项设定是否考虑焦散
+        bool ifcaustic;
+
         // 下面是记录光子数目
         unsigned int photonnum;
 
         // 用vector先存储记录光子
         vector<photon> Photons;
 
+        // 记录焦散高强度光子
+        vector<photon> Caustics_Photons;
+
         // 记录下迭代次数 maybe unused
         unsigned int photoniters;
         // 模板初始化方式有点固定，但不太想多改动
         // 因此收集到光子后再初始化kdtree
         KDTree<photon>* kdtree;
+
+        // 添加焦散现象的考虑
+        // 这里记录下所有反射一次以上的，且采用轮盘赌，仅记录深度较浅的较高质量光子
+        KDTree<photon>* caustics_kdtree;
 
         using SCam = PhotonMapping::Camera;
         SCam camera;
@@ -67,11 +77,16 @@ namespace PhotonMapping
             photonnum   = scene.renderOption.photonnum;
             photoniters = scene.renderOption.photoniters;
 
+            // 是否考虑焦散
+            ifcaustic = scene.renderOption.ifcaustic;
+
             kdtree = nullptr;
+            caustics_kdtree = nullptr;
         }
         ~PhotonMappingRenderer()
         {
             if (kdtree) delete kdtree;
+            if (caustics_kdtree) delete caustics_kdtree;
         }
 
         using RenderResult = tuple<RGBA*, unsigned int, unsigned int>;
@@ -92,12 +107,18 @@ namespace PhotonMapping
         // 添加光子追踪
         void TracePhoton(const Ray& r, const RGB& power, unsigned depth);
 
+        // 用于处理焦散
+        void TraceCaustics(const Ray& r, const RGB& power, unsigned depth);
+        void RandomCaustics();
+
+
         // 用于估计光子提供的间接光照强度
         // 根据传入的hitpoint，查询到一定范围内的光子，并返回间接光照强度
         //RGB EstimateIndirectRadiance(const Ray& r, const HitRecord& Hit);
 
         tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
+
     };
 }  // namespace PhotonMapping
 

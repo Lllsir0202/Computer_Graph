@@ -20,7 +20,8 @@ namespace NRenderer
         unsigned int photonnum;
         // 添加下迭代次数(?)maybe unused
         unsigned int photoniters;
-        RenderOption() : width(500), height(500), depth(40), samplesPerPixel(16), photonnum(100000), photoniters(10) {}
+        bool         ifcaustic;
+        RenderOption() : width(500), height(500), depth(4), samplesPerPixel(16), photonnum(100000), photoniters(10), ifcaustic(false) {}
     };
 
     struct Ambient

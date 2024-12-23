@@ -7,6 +7,7 @@ namespace PhotonMapping
     template <typename Iterator, typename>
     KDTree<Point, K>::KDTree(Iterator begin, Iterator end)
     {
+        root = nullptr;
         std::vector<Point> pts(begin, end);
         if (!pts.empty()) root = buildTree(pts, 0);
     }

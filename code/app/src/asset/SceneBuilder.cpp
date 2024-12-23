@@ -11,6 +11,7 @@ namespace NRenderer
         ro.height                 = renderSettings.height;
         ro.photonnum              = renderSettings.PhotonNums;
         ro.photoniters            = renderSettings.PhotonIters;
+        ro.ifcaustic              = renderSettings.ifcaustic;
         this->scene->renderOption = ro;
     }
 
