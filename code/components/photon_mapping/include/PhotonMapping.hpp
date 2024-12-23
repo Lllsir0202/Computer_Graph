@@ -13,6 +13,8 @@
 #include "Photon.hpp"
 // 引入KDTree
 #include "KDTree.hpp"
+// 引入BVH
+#include "BVH.hpp"
 
 #include <tuple>
 namespace PhotonMapping
@@ -59,6 +61,7 @@ namespace PhotonMapping
         // 添加焦散现象的考虑
         // 这里记录下所有反射一次以上的，且采用轮盘赌，仅记录深度较浅的较高质量光子
         KDTree<photon>* caustics_kdtree;
+        AABBBVH         bvh;
 
         using SCam = PhotonMapping::Camera;
         SCam camera;
@@ -119,6 +122,8 @@ namespace PhotonMapping
         tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
 
+      private:
+        std::vector<photon> getkNearestPhotons(const Vec3& pos, size_t k);
     };
 }  // namespace PhotonMapping
 

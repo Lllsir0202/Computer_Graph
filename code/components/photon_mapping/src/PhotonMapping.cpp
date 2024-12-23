@@ -91,6 +91,7 @@ namespace PhotonMapping
         // 局部坐标转换成世界坐标
         VertexTransformer vertexTransformer{};
         vertexTransformer.exec(spScene);
+        bvh.build(spScene);
 
         RandomPhoton();
 
@@ -189,6 +190,7 @@ namespace PhotonMapping
             delete kdtree;
             kdtree = nullptr;
         }
+        bvh.destory();
         if (caustics_kdtree)
         {
             delete caustics_kdtree;
@@ -200,6 +202,8 @@ namespace PhotonMapping
     {
         HitRecord closestHit = nullopt;
         float     closest    = FLOAT_INF;
+        return bvh.intersect(r, 0.000001, closest);
+        
         for (auto& s : scene.sphereBuffer)
         {
             auto hitRecord = Intersection::xSphere(r, s, 0.000001, closest);
@@ -278,6 +282,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 // 间接照明
                 RGB   indirectLighting(0.0f);
                 auto  nearPhotons = kdtree->kNearest(hitObject->hitPoint, photoniters);
+            // auto  nearPhotons = getkNearestPhotons(hitObject->hitPoint, photoniters);
                 float size        = nearPhotons.size();
 
                 if (!nearPhotons.empty())
@@ -736,5 +741,28 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
         }
 
         // getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
+    }
+    vector<photon> PhotonMappingRenderer::getkNearestPhotons(const Vec3& pos, size_t k)
+    {
+        vector<pair<float, photon>> distPhotons;
+        distPhotons.reserve(Photons.size());
+
+        for (const auto& p : Photons)
+        {
+            float dist = glm::distance(pos, p.GetPosition());
+            distPhotons.emplace_back(dist, p);
+        }
+
+        partial_sort(distPhotons.begin(),
+            distPhotons.begin() + min(k, distPhotons.size()),
+            distPhotons.end(),
+            [](const auto& a, const auto& b) { return a.first < b.first; });
+
+        vector<photon> result;
+        result.reserve(min(k, distPhotons.size()));
+
+        for (size_t i = 0; i < min(k, distPhotons.size()); i++) result.push_back(distPhotons[i].second);
+
+        return result;
     }
 }  // namespace PhotonMapping

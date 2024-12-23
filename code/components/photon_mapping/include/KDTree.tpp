@@ -169,6 +169,8 @@ namespace PhotonMapping
     template <typename Target>
     std::vector<Point> KDTree<Point, K>::kNearest(const Target& target, int k) const
     {
+        if (!root) return {};
+
         std::priority_queue<HeapItem> heap;
         searchKNearest(root, target, k, heap);
 
@@ -187,6 +189,8 @@ namespace PhotonMapping
     template <typename Target>
     std::vector<Point> KDTree<Point, K>::withinRadius(const Target& target, float r) const
     {
+        if (!root) return {};
+
         std::vector<Point> result;
         searchWithinRadius(root, target, r, result);
         return result;
