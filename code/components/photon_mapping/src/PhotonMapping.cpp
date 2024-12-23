@@ -742,6 +742,8 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
 
         // getServer().logger.log("Current size of Photons is " + to_string(Photons.size()) + "\n");
     }
+    
+    // 这个函数是简单的暴力搜索，仅用于性能对比
     vector<photon> PhotonMappingRenderer::getkNearestPhotons(const Vec3& pos, size_t k)
     {
         vector<pair<float, photon>> distPhotons;

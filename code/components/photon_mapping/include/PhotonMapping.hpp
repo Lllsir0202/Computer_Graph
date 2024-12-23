@@ -123,6 +123,7 @@ namespace PhotonMapping
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
 
       private:
+        // 这个函数是简单的暴力搜索，仅用于性能对比
         std::vector<photon> getkNearestPhotons(const Vec3& pos, size_t k);
     };
 }  // namespace PhotonMapping
