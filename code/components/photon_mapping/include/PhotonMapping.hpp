@@ -13,6 +13,8 @@
 #include "Photon.hpp"
 // 引入KDTree
 #include "KDTree.hpp"
+// 引入BVH
+#include "BVH.hpp"
 
 #include <tuple>
 namespace PhotonMapping
@@ -49,6 +51,7 @@ namespace PhotonMapping
         // 模板初始化方式有点固定，但不太想多改动
         // 因此收集到光子后再初始化kdtree
         KDTree<photon>* kdtree;
+        AABBBVH         bvh;
 
         using SCam = PhotonMapping::Camera;
         SCam camera;
@@ -98,6 +101,9 @@ namespace PhotonMapping
 
         tuple<Vec3, Vec3> sampleOnLight(const AreaLight& light);
         DirectLightingRes sampleDirectLighting(const HitRecord& hit, const AreaLight& light);
+
+      private:
+        std::vector<photon> getkNearestPhotons(const Vec3& pos, size_t k);
     };
 }  // namespace PhotonMapping
 
