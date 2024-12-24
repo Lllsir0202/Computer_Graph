@@ -67,12 +67,17 @@ namespace SimplePathTracer
         bvh.destory();
     }
 
+    #define USEBVH
+
     HitRecord SimplePathTracerRenderer::closestHitObject(const Ray& r)
     {
         HitRecord closestHit = nullopt;
         float     closest    = FLOAT_INF;
+
+        #ifdef USEBVH
         return bvh.intersect(r, 0.000001, closest);
-        /*
+        #endif
+        
         for (auto& s : scene.sphereBuffer)
         {
             auto hitRecord = Intersection::xSphere(r, s, 0.000001, closest);
@@ -101,7 +106,7 @@ namespace SimplePathTracer
             }
         }
         return closestHit;
-        */
+        
     }
 
     tuple<float, Vec3> SimplePathTracerRenderer::closestHitLight(const Ray& r)

@@ -23,8 +23,8 @@ namespace PhotonMapping
     };
 }  // namespace PhotonMapping
 
-const static string description = "A Simple PhotonMapping. "
-                                  "Only some simple primitives and materials(Lambertian) are supported."
-                                  "\nPlease use scene file : cornel_area_light.scn";
+const static string description = "A Simple PhotonMapper. "
+                                  "Support conduct and dieletric as well as lambertian"
+                                  "\n";
 
-REGISTER_RENDERER(Test, description, PhotonMapping::Adapter);
+REGISTER_RENDERER(PhotonMap, description, PhotonMapping::Adapter);

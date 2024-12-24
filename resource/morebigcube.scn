@@ -1,0 +1,345 @@
+Begin Material
+
+Material White
+
+Prop diffuseColor RGB 0.725 0.71 0.68
+
+Material Red
+
+Prop diffuseColor RGB 0.63 0.065, 0.05
+
+Material Green
+
+Prop diffuseColor RGB 0.14 0.45 0.091
+
+Material Mirror 3
+
+Prop reflect RGB  1 1 1
+
+Material Titanium 3
+
+Prop reflect RGB  0.542 0.497 0.449
+
+Material Chromium 3
+
+Prop reflect RGB  0.549 0.556 0.554
+
+Material Iron 3
+
+Prop reflect RGB  0.562 0.565 0.578
+
+Material Nickel 3
+
+Prop reflect RGB  0.660 0.609 0.526
+
+Material Platinum 3
+
+Prop reflect RGB  0.673 0.637 0.585
+
+Material Copper 3
+
+Prop reflect RGB  0.955 0.638 0.538
+
+Material Palladium 3
+
+Prop reflect RGB  0.733 0.697 0.652
+
+Material Mercury 3
+
+Prop reflect RGB  0.781 0.780 0.778
+
+Material Brass(C260) 3
+
+Prop reflect RGB  0.910 0.778 0.423
+
+Material Zinc 3
+
+Prop reflect RGB  0.664 0.824 0.850
+
+Material Gold 3
+
+Prop reflect RGB  1.000 0.782 0.344
+
+Material Aluminum 3
+
+Prop reflect RGB  0.913 0.922 0.924
+
+Material Silver 3
+
+Prop reflect RGB  0.972 0.960 0.915
+
+Material Glass 2
+
+Prop absorbed RGB 1 1 1 
+Prop ior Float 1.5
+
+End
+
+Begin Model
+
+Model Wall
+Translation 0.0 0.0 2056.0
+Plane LeftWall Red
+N  -1.0 0.0 0.0
+P 556.0 556.0 556.0
+U 0 -1112.0 0
+V 0 0 -1112.0
+
+Plane RightWall Green
+N 1.0 0.0 0.0
+P -556.0 556.0 556.0
+U 0 -1112.0 0
+V 0 0 -1112.0
+
+Plane TopWall White
+N 0.0 -1.0 0.0
+P 556.0 556.0 556.0
+U -1112.0 0 0
+V 0 0 -1112.0
+
+Plane BottomWall White
+N 0.0 1.0 0.0
+P 556.0 -556.0 556.0
+U -1112.0 0 0
+V 0 0 -1112.0
+
+Plane BackWall White
+N 0.0 0.0 -1.0
+P 556.0 556.0 556.0
+U -1112.0 0 0
+V 0 -1112.0 0
+
+End
+
+Begin Model
+Model Box1
+Translation -100 -178 1150
+
+Plane BoxPlane1 White
+N 0 1 0
+P 100 200 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 100 -100 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane3 White
+N 0.7071 0 -0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 -100
+
+Plane BoxPlane4 White
+N 0.7071 0 0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 100
+
+Plane BoxPlane5 White
+N -0.7071 0 0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 100
+
+Plane BoxPlane6 White
+N -0.7071 0 -0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 -100
+
+End
+
+Begin Model
+Model Box2
+Translation 200 -178 1150
+
+Plane BoxPlane1 White
+N 0 1 0
+P 100 200 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 100 -100 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane3 White
+N 0.7071 0 -0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 -100
+
+Plane BoxPlane4 White
+N 0.7071 0 0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 100
+
+Plane BoxPlane5 White
+N -0.7071 0 0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 100
+
+Plane BoxPlane6 White
+N -0.7071 0 -0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 -100
+
+End
+
+Begin Model
+Model Box3
+Translation -300 -178 1400
+
+Plane BoxPlane1 White
+N 0 1 0
+P 100 200 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 100 -100 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane3 White
+N 0.7071 0 -0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 -100
+
+Plane BoxPlane4 White
+N 0.7071 0 0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 100
+
+Plane BoxPlane5 White
+N -0.7071 0 0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 100
+
+Plane BoxPlane6 White
+N -0.7071 0 -0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 -100
+
+End
+
+Begin Model
+Model Box4
+Translation 300 -178 1400
+
+Plane BoxPlane1 White
+N 0 1 0
+P 100 200 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 100 -100 0
+U -100 0 100
+V -100 0 -100
+
+Plane BoxPlane3 White
+N 0.7071 0 -0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 -100
+
+Plane BoxPlane4 White
+N 0.7071 0 0.7071
+P 100 -100 0
+U 0 300 0
+V -100 0 100
+
+Plane BoxPlane5 White
+N -0.7071 0 0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 100
+
+Plane BoxPlane6 White
+N -0.7071 0 -0.7071
+P -100 -100 0
+U 0 300 0
+V 100 0 -100
+
+End
+
+Begin Model
+
+Model Sphere1
+Translation -300 -456 1600
+
+Sphere Sphere White
+N 0 0 1
+P 0 0 0
+R 100
+
+End
+
+Begin Model
+
+Model Sphere2
+Translation 300 -456 1600
+
+Sphere Sphere White
+N 0 0 1
+P 0 0 0
+R 100
+
+End
+
+Begin Model
+
+Model Pyramid1
+Translation 0 -156 1800
+
+Triangle Bottom White
+N 0 1 0
+V1 -100 -400 100
+V2 100 -400 100
+V3 0 -400 -100
+
+Triangle T1 White
+N -0.891953 0.0743294 -0.445977
+V1 -100 -400 100
+V2 0 -400 -100
+V3 0 200 0
+
+Triangle T2 White
+N 0.891953 0.0743294 -0.445977
+V1 0 -400 -100
+V2 100 -400 100
+V3 0 200 0
+
+Triangle T3 White
+N 0 0.164399 0.986394
+V1 -100 -400 100
+V2 100 -400 100
+V3 0 200 0
+
+End
+
+Begin Light
+
+Area TopLight
+IRV 95.6768 77.1328 62.1616
+P 120 550 2176
+U -240 0 0
+V 0 0 -240
+
+End

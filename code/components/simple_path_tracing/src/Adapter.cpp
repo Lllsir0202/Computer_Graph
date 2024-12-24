@@ -24,7 +24,7 @@ namespace SimplePathTracer
 }  // namespace SimplePathTracer
 
 const static string description = "A Simple Path Tracer. "
-                                  "Only some simple primitives and materials(Lambertian) are supported."
-                                  "\nPlease use scene file : cornel_area_light.scn";
+                                  "Optimized by BVH and support conduct and dieletronic"
+                                  "\n";
 
-REGISTER_RENDERER(SimplePathTracer, description, SimplePathTracer::Adapter);
+REGISTER_RENDERER(OptPathTracer, description, SimplePathTracer::Adapter);
