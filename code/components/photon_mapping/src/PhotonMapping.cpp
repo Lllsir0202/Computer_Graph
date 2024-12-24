@@ -309,20 +309,23 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                     auto CausticPhotons = caustics_kdtree->kNearest(hitObject->hitPoint, 25);
                     if (!CausticPhotons.empty())
                     {
-                        float radius  = 50;
                         float maxDist = 0.0f;
                         for (const auto& photon : CausticPhotons)
                             maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
                         if (maxDist > 1e-4)
                         {
+                            auto attent = scattered.attenuation + scattered.r_attenuation;
+                            if (scattered.has_refraction)
+                            { attent /= 2;
+                            }
                             for (const auto& photon : CausticPhotons)
                             {
                                 float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
                                 float weight = 1.0f - (dist * dist) / (maxDist * maxDist);  // 或使用高斯衰减
 
-                                float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
+                                float cos_theta = glm::dot(hitObject->normal, photon.GetInput().direction);
                                 if (cos_theta <= 0.0f) continue;
-                                CausticLighting += photon.GetPower() * weight * scattered.attenuation * cos_theta /
+                                CausticLighting += photon.GetPower() * weight * cos_theta * attent/
                                                    (PI * maxDist * maxDist);
                             }
                         }
@@ -331,13 +334,13 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 }
 
                 // 如果漫反射到光源，则不能计算
-                auto NextHitobject = closestHitObject(scatteredRay);
-                if (NextHitobject && spScene->materials[NextHitobject->material.index()].type == 0)
-                {
-                    indirectLighting += gamma(next) / size;  // 加入后续光照的处理
-                }
+                //auto NextHitobject = closestHitObject(scatteredRay);
+                //if (NextHitobject && spScene->materials[NextHitobject->material.index()].type == 0)
+                //{
+                //    indirectLighting += gamma(next) / size;  // 加入后续光照的处理
+                //}
 
-                RGB finalColor = scattered_emitted + directLighting + indirectLighting + attenuation * next;
+                RGB finalColor = scattered_emitted + directLighting + indirectLighting + attenuation * next + CausticLighting;
                 return glm::clamp(finalColor, Vec3(0.0f), Vec3(1.0f));
             }
             else if (type == 2) // 电介质
@@ -585,7 +588,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 if (scatter.has_refraction)
                 {
                     // 处理折射
-                    auto r_cos_thera = (glm::abs(glm::dot(hitrecord->normal, -scatter.r_ray.direction)));
+                    auto r_cos_thera = (glm::abs(glm::dot(hitrecord->normal, scatter.r_ray.direction)));
 
                     RGB r_newpower = power * scatter.r_attenuation * r_cos_thera / scatter.r_pdf;
                     //cout << r_newpower << endl;
@@ -681,7 +684,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
             //  漫反射需要记录光子
             // 在焦散处理时，我们只需要记录高质量的光子
             // 记录反射一次后的
-            if(Russian_Roulette(0.1))
+            if(Russian_Roulette(p))
             {
                 if (depth > 0)
                 {
@@ -698,7 +701,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
         {
             // cout << num2++ << endl;
 
-            if (Russian_Roulette(p))
+            if (Russian_Roulette(p) && depth < 3)
             {
                 // 同样的计算新的ray和power
                 auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
@@ -719,12 +722,12 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
             // cout << num3++ << endl;
 
             // 采用俄罗斯轮盘赌决定处理散射还是折射
-            if (Russian_Roulette(p))
+            if (Russian_Roulette(p) && depth < 3)
             {
                 if (scatter.has_refraction)
                 {
                     // 处理折射
-                    auto r_cos_thera = (glm::abs(glm::dot(hitrecord->normal, -scatter.r_ray.direction)));
+                    auto r_cos_thera = (glm::abs(glm::dot(hitrecord->normal, scatter.r_ray.direction)));
 
                     RGB r_newpower = power * scatter.r_attenuation * r_cos_thera / scatter.r_pdf;
                     // cout << r_newpower << endl;
