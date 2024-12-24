@@ -20,13 +20,30 @@ namespace PhotonMapping
             ior = 1;
     }
 
+    static float GeometrySchlickGGX(float NdotV, float roughness)
+    {
+        float k = (roughness * roughness) * 0.5f;
+        return NdotV / (NdotV * (1.0f - k) + k);
+    }
+
+    static float TrowbridgeReitzGGX(float NdotH, float roughness)
+    {
+        float a2    = roughness * roughness;
+        float denom = (NdotH * NdotH) * (a2 - 1.0f) + 1.0f;
+        return a2 / (PI * denom * denom);
+    }
+
     Scattered Dielectric::shade(const Ray& ray, const Vec3& hitPoint, const Vec3& normal) const
     {
-        Vec3 n           = glm::dot(normal, ray.direction) > 0 ? -normal : normal;
-        Vec3 Wr          = glm::normalize(ray.direction - 2 * (glm::dot(ray.direction, n)) * n);
-        Vec3 f           = absorbed + (Vec3(1.0, 1.0, 1.0) - absorbed) * pow(1.0f - abs(glm::dot(normal, Wr)), 5.0f);
-        Vec3 attenuation = f / abs(glm::dot(ray.direction, n));
-        Vec3 Wi          = -ray.direction;
+        Vec3  n           = glm::dot(normal, ray.direction) > 0 ? -normal : normal;
+        Vec3  Wr          = glm::normalize(ray.direction - 2 * (glm::dot(ray.direction, n)) * n);
+        float NdotH       = glm::dot(n, glm::normalize(-ray.direction + Wr));
+        float D           = TrowbridgeReitzGGX(NdotH, 0.5f);
+        Vec3  f           = absorbed + (Vec3(1.0, 1.0, 1.0) - absorbed) * pow(1.0f - glm::dot(n, Wr), 5.0f);
+        float NdotV       = glm::abs(glm::dot(n, -ray.direction));
+        float G           = GeometrySchlickGGX(NdotV, 0.5f);
+        Vec3  attenuation = f * D * G / (4.f * glm::abs(glm::dot(Wr, n)) * glm::abs(glm::dot(ray.direction, n)));
+        Vec3  Wi          = -ray.direction;
 
         float ni_nt    = glm::dot(normal, Wi) > 0 ? (1.0f / ior) : (ior / 1.0f);
         float cos_val  = abs(glm::dot(n, Wi));

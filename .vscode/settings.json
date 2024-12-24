@@ -2,6 +2,9 @@
     "files.associations": {
         "*.sy": "c",
         "iosfwd": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp",
+        "cmath": "cpp"
     }
 }
