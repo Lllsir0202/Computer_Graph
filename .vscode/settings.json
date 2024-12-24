@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.sy": "c",
+        "iosfwd": "cpp",
+        "vector": "cpp"
+    }
+}
