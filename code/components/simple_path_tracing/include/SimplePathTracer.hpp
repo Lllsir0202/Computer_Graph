@@ -6,6 +6,7 @@
 #include "Ray.hpp"
 #include "Camera.hpp"
 #include "intersections/HitRecord.hpp"
+#include "BVH.hpp"
 
 #include "shaders/ShaderCreator.hpp"
 
@@ -26,6 +27,8 @@ namespace SimplePathTracer
         unsigned int height;
         unsigned int depth;
         unsigned int samples;
+
+        AABBBVH bvh;
 
         using SCam = SimplePathTracer::Camera;
         SCam camera;

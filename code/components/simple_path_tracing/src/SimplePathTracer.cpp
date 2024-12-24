@@ -47,6 +47,7 @@ namespace SimplePathTracer
         // 局部坐标转换成世界坐标
         VertexTransformer vertexTransformer{};
         vertexTransformer.exec(spScene);
+        bvh.build(spScene);
 
         const auto taskNums = 8;
         thread     t[taskNums];
@@ -63,12 +64,15 @@ namespace SimplePathTracer
     {
         auto [p, w, h] = r;
         delete[] p;
+        bvh.destory();
     }
 
     HitRecord SimplePathTracerRenderer::closestHitObject(const Ray& r)
     {
         HitRecord closestHit = nullopt;
         float     closest    = FLOAT_INF;
+        return bvh.intersect(r, 0.000001, closest);
+        /*
         for (auto& s : scene.sphereBuffer)
         {
             auto hitRecord = Intersection::xSphere(r, s, 0.000001, closest);
@@ -97,6 +101,7 @@ namespace SimplePathTracer
             }
         }
         return closestHit;
+        */
     }
 
     tuple<float, Vec3> SimplePathTracerRenderer::closestHitLight(const Ray& r)

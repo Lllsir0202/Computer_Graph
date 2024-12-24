@@ -14,7 +14,7 @@ namespace
     constexpr NRenderer::Vec3 nInfVec(nfInf, nfInf, nfInf);
 }  // namespace
 
-namespace PhotonMapping
+namespace SimplePathTracer
 {
     AABBBVH::AABBBVH() : root(nullptr), objects() {}
     AABBBVH::~AABBBVH() { destory(); }
