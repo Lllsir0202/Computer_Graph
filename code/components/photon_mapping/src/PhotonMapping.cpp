@@ -306,25 +306,20 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 RGB CausticLighting(0.0f);
                 if(caustics_kdtree && ifcaustic)
                 {
-                    auto CausticPhotons = caustics_kdtree->kNearest(hitObject->hitPoint, 50);
+                    auto CausticPhotons = caustics_kdtree->kNearest(hitObject->hitPoint, 25);
                     if (!CausticPhotons.empty())
                     {
                         float maxDist = 0.0f;
                         for (const auto& photon : CausticPhotons)
                             maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
-                        if (maxDist > 1e-4)
-                        {
                             for (const auto& photon : CausticPhotons)
                             {
-                                float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
-                                float weight = 1.0f - (dist * dist) / (maxDist * maxDist);  // 或使用高斯衰减
 
                                 float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
                                 if (cos_theta <= 0.0f) continue;
                                 CausticLighting += photon.GetPower() * scattered.attenuation /
                                                    (PI * maxDist);  //* maxDist);
                             }
-                        }
                         
                     }
                 }
