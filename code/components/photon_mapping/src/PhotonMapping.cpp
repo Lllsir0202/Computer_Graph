@@ -306,7 +306,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 RGB CausticLighting(0.0f);
                 if(caustics_kdtree && ifcaustic)
                 {
-                    auto CausticPhotons = caustics_kdtree->kNearest(hitObject->hitPoint, 15);
+                    auto CausticPhotons = caustics_kdtree->kNearest(hitObject->hitPoint, 50);
                     if (!CausticPhotons.empty())
                     {
                         float maxDist = 0.0f;
@@ -314,10 +314,6 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                             maxDist = std::max(maxDist, glm::distance(photon.GetPosition(), hitObject->hitPoint));
                         if (maxDist > 1e-4)
                         {
-                            auto attent = scattered.attenuation + scattered.r_attenuation;
-                            if (scattered.has_refraction)
-                            { attent /= 2;
-                            }
                             for (const auto& photon : CausticPhotons)
                             {
                                 float dist   = glm::distance(photon.GetPosition(), hitObject->hitPoint);
@@ -325,8 +321,8 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
 
                                 float cos_theta = glm::dot(hitObject->normal, -photon.GetInput().direction);
                                 if (cos_theta <= 0.0f) continue;
-                                CausticLighting += photon.GetPower() * weight * cos_theta * attent/
-                                                   (PI * maxDist * maxDist);
+                                CausticLighting += photon.GetPower() * scattered.attenuation /
+                                                   (PI * maxDist);  //* maxDist);
                             }
                         }
                         
@@ -432,7 +428,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                     RGB Power = (area.radiance * AreaLight_Area) / ((static_cast<float>(photonnum) * PI));
 
                     // 这里的rgb是没有问题的
-                    // cout << "power is : R " << Power.r << " G " << Power.g << " B " << Power.b << endl;
+                     //cout << "power is : R " << Power.r << " G " << Power.g << " B " << Power.b << endl;
 
                     Ray r(Position, World_dir);
                     TracePhoton(r, Power, 0);
@@ -478,10 +474,10 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                     RGB Power = (area.radiance * AreaLight_Area) / ((static_cast<float>(photonnum) * PI));
 
                     // 这里的rgb是没有问题的
-                    // cout << "power is : R " << Power.r << " G " << Power.g << " B " << Power.b << endl;
+                     //cout << "power is : R " << Power.r << " G " << Power.g << " B " << Power.b << endl;
 
                     Ray r(Position, World_dir);
-                    TraceCaustics(r, Position, 0);
+                    TraceCaustics(r, Power, 0);
                 }
             }
         }
@@ -536,6 +532,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
         {
             // cout << " Lab is " << num1++ << endl;
             //  漫反射需要记录光子
+            //cout << power << endl;
             photon Photon(hitpoint, power, r, scatter.ray);
             // cout << hitpoint << endl;
             Photons.push_back(Photon);
@@ -676,7 +673,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
         auto  ndoti = glm::dot(hitrecord->normal, r.direction);
         float p     = 1.f - 0.5 * (ndoti > 0.0f ? ndoti : 0) - 0.5 * static_cast<float>(depth) / this->depth;
         // float p = 0.9;
-        //  cout << p << endl;
+          //cout << p << endl;
         /*cout << spScene->materials[material.index()].type << endl;*/
         //  接下来根据材质进行判断
         if (spScene->materials[material.index()].type == 0)  // 表示漫反射
@@ -688,6 +685,7 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
             {
                 if (depth > 0)
                 {
+                    //cout << power << endl;
                     photon Photon(hitpoint, power, r, scatter.ray);
                     // cout << hitpoint << endl;
                     Caustics_Photons.push_back(Photon);
@@ -709,10 +707,8 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                 RGB newpower = power * scatter.attenuation * cos_thera / (scatter.pdf * p);
 
                 // 对于导体来说，应该是需要计算反射方向的
-                // glm提供了直接计算反射的()
-                Vec3 reflectDir = glm::reflect(r.direction, hitrecord->normal);
-                Ray  reflectRay(hitpoint, reflectDir);
-                TraceCaustics(reflectRay, newpower, depth + 1);
+
+                TraceCaustics(scatter.ray, newpower, depth + 1);
             }
         }
 
@@ -730,14 +726,12 @@ RGB PhotonMappingRenderer::trace(const Ray& r, int currDepth)
                     auto r_cos_thera = (glm::abs(glm::dot(hitrecord->normal, scatter.r_ray.direction)));
 
                     RGB r_newpower = power * scatter.r_attenuation * r_cos_thera / scatter.r_pdf;
-                    // cout << r_newpower << endl;
                     TraceCaustics(scatter.r_ray, r_newpower, depth + 1);
                 }
 
                 // 处理散射
                 auto cos_thera = (glm::abs(glm::dot(hitrecord->normal, -r.direction)));
                 auto newpower  = power * scatter.attenuation * cos_thera / scatter.pdf;
-                // cout << newpower << endl;
 
                 TraceCaustics(scatter.ray, newpower, depth + 1);
             }
