@@ -1,0 +1,16851 @@
+Begin Material
+Material White
+Prop diffuseColor RGB 0.725 0.71 0.68
+Material Red
+Prop diffuseColor RGB 0.63 0.065 0.05
+Material Green
+Prop diffuseColor RGB 0.14 0.45 0.091
+End
+
+Begin Model
+Model Wall
+Translation 0.0 0.0 2056.0
+Plane LeftWall Red
+N -1.0 0.0 0.0
+P 556.0 556.0 556.0
+U 0 -1112.0 0
+V 0 0 -1112.0
+
+Plane RightWall Green
+N 1.0 0.0 0.0
+P -556.0 556.0 556.0
+U 0 -1112.0 0
+V 0 0 -1112.0
+
+Plane TopWall White
+N 0.0 -1.0 0.0
+P 556.0 556.0 556.0
+U -1112.0 0 0
+V 0 0 -1112.0
+
+Plane BottomWall White
+N 0.0 1.0 0.0
+P 556.0 -556.0 556.0
+U -1112.0 0 0
+V 0 0 -1112.0
+
+Plane BackWall White
+N 0.0 0.0 -1.0
+P 556.0 556.0 556.0
+U -1112.0 0 0
+V 0 -1112.0 0
+
+End
+
+Begin Model
+Model Box0
+Translation -399.4576035642078 -456 1396.9219741587074
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box1
+Translation -330.5777781854864 -456 1403.1041168542304
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box2
+Translation -272.88990768760664 -456 1398.2086588168643
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box3
+Translation -197.19894943517883 -456 1397.2125815722043
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box4
+Translation -136.61837780135707 -456 1404.886175632718
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box5
+Translation -66.1517245330246 -456 1397.6803889627993
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box6
+Translation -7.632253610848163 -456 1403.6941349124977
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box7
+Translation 57.12815890807414 -456 1404.1698434113903
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box8
+Translation 125.23090698118017 -456 1395.91660722822
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box9
+Translation 190.82718873074018 -456 1400.546374797524
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box10
+Translation -399.0186601583074 -456 1468.5095943856782
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box11
+Translation -336.2019090244289 -456 1463.4223515536257
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box12
+Translation -269.18937153268917 -456 1470.0767231356797
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box13
+Translation -199.0292227375179 -456 1466.6952770586304
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box14
+Translation -132.9239590796897 -456 1463.901420553425
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box15
+Translation -72.35724866620178 -456 1463.0214095396123
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box16
+Translation -5.019028590996922 -456 1468.3625355187576
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box17
+Translation 57.67002666690364 -456 1466.187642804516
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box18
+Translation 129.40230965043034 -456 1465.4172325858972
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box19
+Translation 195.19017104348939 -456 1463.5470797061296
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box20
+Translation -396.97182784360785 -456 1535.295919839601
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box21
+Translation -329.9280094692216 -456 1536.834042402073
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box22
+Translation -269.8473175321181 -456 1532.4955161468765
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box23
+Translation -198.1616397179488 -456 1529.451670321063
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box24
+Translation -139.05689550012278 -456 1528.5422198285544
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box25
+Translation -68.6326848180279 -456 1529.782556440289
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box26
+Translation -6.950873340157343 -456 1534.2019569594568
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box27
+Translation 58.775291937328376 -456 1532.2164397786182
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box28
+Translation 130.96152276849446 -456 1527.2732581745465
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box29
+Translation 193.44427253509738 -456 1530.8401837987271
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box30
+Translation -402.5243617501011 -456 1596.1711217513187
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box31
+Translation -329.9282140658168 -456 1599.1484808587509
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box32
+Translation -271.8940378858013 -456 1596.0644535844017
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box33
+Translation -205.25040857291478 -456 1600.9491435407617
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box34
+Translation -134.33276003897197 -456 1598.0185552880735
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box35
+Translation -71.26279850382619 -456 1600.1820434629485
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box36
+Translation -8.232641381699716 -456 1597.3353511077962
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box37
+Translation 59.286055711225906 -456 1598.4542409873109
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box38
+Translation 128.01637555888277 -456 1594.160184095129
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box39
+Translation 198.20906248561778 -456 1597.1737718683419
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box40
+Translation -398.4188180699728 -456 1666.2062571841595
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box41
+Translation -335.55641588577237 -456 1662.7480315017467
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box42
+Translation -270.08547030087345 -456 1660.1730697289258
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box43
+Translation -205.98243993863207 -456 1661.052180011349
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box44
+Translation -133.91145463423052 -456 1667.7284671936384
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box45
+Translation -74.2598433957217 -456 1666.5316534697502
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box46
+Translation -5.042718042036733 -456 1661.096984515192
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box47
+Translation 59.3024013655802 -456 1665.247589253829
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box48
+Translation 131.4939611030389 -456 1668.185874179709
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box49
+Translation 198.28319638964538 -456 1666.0901369756612
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box50
+Translation -404.01825583792237 -456 1725.2272228504846
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box51
+Translation -338.0258343597635 -456 1728.4905866984575
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box52
+Translation -270.2685971582316 -456 1727.4691036810898
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box53
+Translation -198.00543897009794 -456 1730.1373537298887
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box54
+Translation -138.3020122129666 -456 1728.910738732097
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box55
+Translation -73.13091793617517 -456 1729.3925302393318
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box56
+Translation -0.30614382824150965 -456 1725.8366473023918
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box57
+Translation 60.599386261170736 -456 1732.287070011296
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box58
+Translation 129.78695861774844 -456 1728.5523816245864
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box59
+Translation 194.5413087068531 -456 1734.40334323462
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box60
+Translation -395.3924972586562 -456 1796.5264988552426
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box61
+Translation -333.983513873015 -456 1797.8207359472517
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box62
+Translation -267.3440356770913 -456 1791.1425345124935
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box63
+Translation -206.68267003991673 -456 1797.3619697307263
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box64
+Translation -138.56770759215013 -456 1794.2753941150243
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box65
+Translation -72.09682225433723 -456 1796.818868504977
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box66
+Translation -2.0138011444446686 -456 1794.5460818299284
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box67
+Translation 59.49259448018992 -456 1793.3089978607763
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box68
+Translation 123.66214365526295 -456 1796.9223041138232
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box69
+Translation 194.78437340658073 -456 1800.384523800045
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box70
+Translation -400.4181339986658 -456 1863.8940046850496
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box71
+Translation -338.6788617733072 -456 1865.2839232458116
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box72
+Translation -272.03148043770335 -456 1861.2684599364984
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box73
+Translation -197.11358628371886 -456 1864.5696116305355
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box74
+Translation -137.91469964551564 -456 1860.5746695407852
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box75
+Translation -73.03432659823521 -456 1858.0948764702448
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box76
+Translation 0.1938432039226008 -456 1859.3527378841413
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box77
+Translation 57.37979399107239 -456 1860.5600263623369
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box78
+Translation 131.606724037628 -456 1861.874532728721
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box79
+Translation 189.82704553162895 -456 1866.9331047983962
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box80
+Translation -402.05146058991966 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box81
+Translation -331.28017289110744 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box82
+Translation -267.19010566634114 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box83
+Translation -205.9305394512695 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box84
+Translation -133.75014454265795 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box85
+Translation -72.23430148410242 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box86
+Translation -0.22307314164804737 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box87
+Translation 62.515616837438316 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box88
+Translation 129.54510035463858 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box89
+Translation 190.18150173484761 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box90
+Translation -399.7917773374661 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box91
+Translation -334.1914322154336 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box92
+Translation -267.98360716921 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box93
+Translation -200.84474894478018 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box94
+Translation -138.806990020088 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box95
+Translation -74.12516327532899 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box96
+Translation 0.729673706873843 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box97
+Translation 57.22232396178217 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box98
+Translation 126.38309013208756 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box99
+Translation 190.10863813371643 -456 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box100
+Translation -398.47192757247126 -396 1401.905083362226
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box101
+Translation -332.67977085727307 -396 1398.301926735965
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box102
+Translation -274.8398046431418 -396 1400.5880238412356
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box103
+Translation -194.69270847359994 -396 1406.6067024103947
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box104
+Translation -132.64900978306255 -396 1406.3273007471785
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box105
+Translation -70.10283108187147 -396 1405.330718497011
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box106
+Translation -4.65697738125204 -396 1394.9410798013562
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box107
+Translation 58.58299895043764 -396 1396.7435275683933
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box108
+Translation 131.99444129556895 -396 1396.7544218160613
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box109
+Translation 200.58825040345118 -396 1396.4193427003884
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box110
+Translation -404.94906034789454 -396 1466.6549677622356
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box111
+Translation -328.59745299951186 -396 1461.2255159984516
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box112
+Translation -262.8105481026432 -396 1472.1171226895888
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box113
+Translation -198.03894725845177 -396 1470.4578469713556
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box114
+Translation -139.97521557876493 -396 1460.6265579814972
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box115
+Translation -67.79647852685395 -396 1464.726036923792
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box116
+Translation -2.8984422867446384 -396 1468.1961352514556
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box117
+Translation 64.32702227338798 -396 1465.530789990587
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box118
+Translation 134.89073570911486 -396 1460.9685864834107
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box119
+Translation 195.0939295331183 -396 1471.9547777395258
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box120
+Translation -401.69949865291153 -396 1536.5141809631189
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box121
+Translation -337.1458133094523 -396 1526.6807834230433
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box122
+Translation -274.14076887333084 -396 1528.2908665160962
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box123
+Translation -195.12516337295128 -396 1533.6097721864046
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box124
+Translation -130.2978493794117 -396 1535.6318699485505
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box125
+Translation -68.10017253278376 -396 1525.2202594482899
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box126
+Translation -5.06697000512998 -396 1525.188832619973
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box127
+Translation 65.24731046769924 -396 1524.9683667553654
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box128
+Translation 127.04879993562663 -396 1526.8771465697805
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box129
+Translation 191.55402867207607 -396 1531.4951160362366
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box130
+Translation -395.44784855609527 -396 1599.3596214784682
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box131
+Translation -337.7875996027764 -396 1595.5795777870026
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box132
+Translation -273.7601396137784 -396 1602.4186569131512
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box133
+Translation -207.9878895587132 -396 1596.9751409511885
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box134
+Translation -142.8764855696294 -396 1602.9035374880782
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box135
+Translation -73.65420194163106 -396 1594.3314149016253
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box136
+Translation -1.7372295998137899 -396 1604.1262566933785
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box137
+Translation 60.111768306412245 -396 1596.3239179823838
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box138
+Translation 123.55834230203672 -396 1602.7360130108686
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box139
+Translation 192.14404736153094 -396 1594.2082396808064
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box140
+Translation -393.3678583452518 -396 1656.9030575263766
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box141
+Translation -333.4574658632316 -396 1660.3431521341304
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box142
+Translation -266.9285711952095 -396 1664.3908590704157
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box143
+Translation -195.4288285688001 -396 1662.499452381505
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box144
+Translation -132.3136482840448 -396 1668.4786942629205
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box145
+Translation -71.25895977939035 -396 1663.3628023325987
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box146
+Translation -9.204912621590598 -396 1658.280038591093
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box147
+Translation 55.221470645342336 -396 1670.7963296918358
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box148
+Translation 128.1935110813894 -396 1667.1701922953455
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box149
+Translation 198.28923277274123 -396 1664.0991585196807
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box150
+Translation -405.562135072809 -396 1724.6906142218138
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box151
+Translation -332.8489686916597 -396 1724.7594983278593
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box152
+Translation -266.39082205176874 -396 1727.8431029792664
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box153
+Translation -203.63593547664684 -396 1730.6303645692074
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box154
+Translation -142.91205093235578 -396 1728.9311958905728
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box155
+Translation -66.08707015298589 -396 1734.6220184662127
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box156
+Translation 0.40503040269567503 -396 1730.4594778583037
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box157
+Translation 56.610465226040446 -396 1725.1185173792474
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box158
+Translation 135.32237433607594 -396 1734.6433787465596
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box159
+Translation 192.81873807614448 -396 1734.636557796759
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box160
+Translation -402.90575153506654 -396 1790.8394918034971
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box161
+Translation -332.9387155613093 -396 1803.2798839908464
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box162
+Translation -265.83331564632886 -396 1794.3442552760478
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box163
+Translation -201.93165626141706 -396 1797.8620979121042
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box164
+Translation -141.821411867068 -396 1793.6532410633386
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box165
+Translation -74.58502239480157 -396 1800.2918882737072
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box166
+Translation -0.4543968030250465 -396 1794.4973973935246
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box167
+Translation 56.502505238906636 -396 1798.655535059654
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box168
+Translation 123.95798961013506 -396 1799.6816729214777
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box169
+Translation 201.42469730505465 -396 1794.1845190406952
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box170
+Translation -399.01886986240584 -396 1858.9506522415652
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box171
+Translation -329.6050456401452 -396 1858.1707329648543
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box172
+Translation -273.6437787114008 -396 1867.9790274413822
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box173
+Translation -198.34183373593874 -396 1865.0923988338513
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box174
+Translation -137.28065137423957 -396 1865.944907637098
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box175
+Translation -64.13934398636283 -396 1867.6451534131888
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box176
+Translation -5.106873003041812 -396 1863.611271422614
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box177
+Translation 62.411243826539774 -396 1861.8570513996049
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box178
+Translation 125.2104129755451 -396 1859.4125002677533
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box179
+Translation 193.65683715651488 -396 1864.6637023559333
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box180
+Translation -393.5941134385121 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box181
+Translation -339.5619498078623 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box182
+Translation -263.29898511559674 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box183
+Translation -208.27998870669106 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box184
+Translation -129.5218648701877 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box185
+Translation -76.74257426048771 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box186
+Translation 3.2439682498915188 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box187
+Translation 63.264174590835566 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box188
+Translation 121.66273552747427 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box189
+Translation 186.80719185259346 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box190
+Translation -400.5444968792917 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box191
+Translation -333.4940182047292 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box192
+Translation -270.2103514934264 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box193
+Translation -201.12216011309476 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box194
+Translation -140.25759038116547 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box195
+Translation -66.93880797705432 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box196
+Translation -3.1592253977876115 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box197
+Translation 64.02790707224149 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box198
+Translation 124.66786817598901 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box199
+Translation 195.4562191219999 -396 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box200
+Translation -405.44172027814284 -336 1401.1022084967822
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box201
+Translation -336.68593514994745 -336 1399.7905741080374
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box202
+Translation -266.6899122703283 -336 1395.1942573936994
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box203
+Translation -198.05792208767087 -336 1393.2673311923627
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box204
+Translation -140.61945268010024 -336 1399.661908660372
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box205
+Translation -74.52520013875441 -336 1396.0680028441548
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box206
+Translation -0.7444579830102058 -336 1403.2663741621686
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box207
+Translation 61.338577975120536 -336 1401.4615294361492
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box208
+Translation 126.28368387933718 -336 1394.7140518108147
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box209
+Translation 186.68248207059534 -336 1393.5219199967653
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box210
+Translation -396.7336927931538 -336 1471.5813437440008
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box211
+Translation -338.9835391785839 -336 1470.992888735957
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box212
+Translation -272.15548038551793 -336 1472.5043184879528
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box213
+Translation -205.1664579803944 -336 1462.2491142508006
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box214
+Translation -131.83609454902452 -336 1462.0863838380155
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box215
+Translation -72.36771807274086 -336 1466.477122798535
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box216
+Translation -0.8767327319850358 -336 1463.2635189947314
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box217
+Translation 64.8114703746681 -336 1468.6156402836543
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box218
+Translation 121.469886079487 -336 1468.9997071521293
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box219
+Translation 187.37870690798437 -336 1465.2914853655836
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box220
+Translation -395.34160838558114 -336 1528.7251717207535
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box221
+Translation -339.6826807593218 -336 1536.8828786301588
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box222
+Translation -265.5509902394747 -336 1533.6092296995957
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box223
+Translation -206.75914335209148 -336 1524.586528450442
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box224
+Translation -136.91250717701612 -336 1527.8338410527863
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box225
+Translation -70.07609070717655 -336 1538.1445752929417
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box226
+Translation 0.14634120271208317 -336 1539.1755761749487
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box227
+Translation 68.69980724422088 -336 1530.624427345738
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box228
+Translation 122.50317991460678 -336 1528.6652071283754
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box229
+Translation 191.92798680050228 -336 1537.476403305337
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box230
+Translation -400.0907994706926 -336 1594.8514261469284
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box231
+Translation -337.6968327440374 -336 1597.7143856515659
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box232
+Translation -268.4761519041864 -336 1594.783816119924
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box233
+Translation -199.99182197120757 -336 1591.2140801811063
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box234
+Translation -138.60814150615482 -336 1598.1699296468332
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box235
+Translation -66.84665284493958 -336 1597.5303124442223
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box236
+Translation 0.3167425782918727 -336 1592.198581496851
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box237
+Translation 63.0631574650225 -336 1596.9027958083439
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box238
+Translation 129.3954964440754 -336 1598.8857490524033
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box239
+Translation 192.38110397621438 -336 1592.6696119796113
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box240
+Translation -396.34074300970025 -336 1668.6908002895107
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box241
+Translation -333.3717512505499 -336 1657.1497941811251
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box242
+Translation -274.1963488799657 -336 1658.1017276750715
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box243
+Translation -195.26485149701875 -336 1670.8966843487299
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box244
+Translation -141.5011838722818 -336 1671.4045435838113
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box245
+Translation -66.4427017897785 -336 1666.4998225152729
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box246
+Translation -4.528264493383613 -336 1671.396912671017
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box247
+Translation 55.96514147594194 -336 1656.5572093533651
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box248
+Translation 131.7131507860678 -336 1668.3094535349494
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box249
+Translation 198.9621958135248 -336 1659.09235734135
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box250
+Translation -395.29812964694935 -336 1734.4548431764447
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box251
+Translation -336.8838884615515 -336 1725.4268022660588
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box252
+Translation -269.67559301696645 -336 1723.8289866310934
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box253
+Translation -204.7210594693591 -336 1727.3314753134919
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box254
+Translation -139.82766602396447 -336 1722.574718100575
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box255
+Translation -67.06727986224374 -336 1724.6654249098992
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box256
+Translation -10.541981002088047 -336 1724.5569479067901
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box257
+Translation 54.68702989315059 -336 1734.1479566444038
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box258
+Translation 133.56477071006108 -336 1733.6342886249724
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box259
+Translation 188.6044569178413 -336 1728.1075045886998
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box260
+Translation -402.45037572593094 -336 1795.2688965817713
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box261
+Translation -333.8474502262244 -336 1791.7556151896633
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box262
+Translation -269.2275342017867 -336 1795.3847744569562
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box263
+Translation -195.98478201281173 -336 1795.6062026853763
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box264
+Translation -133.75210836630026 -336 1794.5080827940742
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box265
+Translation -67.2461897800683 -336 1796.884150325231
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box266
+Translation -7.912576776512466 -336 1798.5163121663588
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box267
+Translation 61.240535992880915 -336 1795.3239845053995
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box268
+Translation 132.75730068903854 -336 1801.5915439668736
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box269
+Translation 194.6666447194563 -336 1792.843993053035
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box270
+Translation -392.7938025815315 -336 1863.1075466890272
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box271
+Translation -331.2001996043687 -336 1857.3661194444978
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box272
+Translation -269.480854737715 -336 1864.064418379689
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box273
+Translation -204.5141150925125 -336 1868.7320235880172
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box274
+Translation -141.47023558181175 -336 1855.004525953408
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box275
+Translation -75.38715840855548 -336 1865.3007848038105
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box276
+Translation -10.62042935518478 -336 1866.407125109132
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box277
+Translation 60.21658743114267 -336 1859.137632945105
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box278
+Translation 132.9904681910922 -336 1857.5913781803004
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box279
+Translation 191.68979231816644 -336 1863.0958310508183
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box280
+Translation -395.07176765555965 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box281
+Translation -334.66223282898846 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box282
+Translation -273.82119740396763 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box283
+Translation -207.91895970502085 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box284
+Translation -131.41994857086533 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box285
+Translation -71.5564414081353 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box286
+Translation -7.041552874136553 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box287
+Translation 69.40484459599828 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box288
+Translation 127.03606725042442 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box289
+Translation 199.44671655024231 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box290
+Translation -397.3861825831385 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box291
+Translation -329.67572316974025 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box292
+Translation -267.76592946525716 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box293
+Translation -194.9077036652724 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box294
+Translation -137.8314618103226 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box295
+Translation -68.34123502363853 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box296
+Translation -6.909788907101747 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box297
+Translation 60.746997568320616 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box298
+Translation 126.09847804268776 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box299
+Translation 192.8140124235398 -336 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box300
+Translation -395.7385894152595 -276 1400.740477686126
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box301
+Translation -331.5830771451205 -276 1393.0179875956915
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box302
+Translation -273.6096917466276 -276 1401.0307076173988
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box303
+Translation -208.00489381028538 -276 1406.4232599705563
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box304
+Translation -136.31944562126063 -276 1403.8301861145396
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box305
+Translation -74.60348842083229 -276 1394.2833562523792
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box306
+Translation -7.572198044883319 -276 1404.9460579890094
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box307
+Translation 56.42845667255058 -276 1400.409944568073
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box308
+Translation 125.59581613070343 -276 1403.7575362193318
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box309
+Translation 195.97371113170246 -276 1393.0993276262905
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box310
+Translation -402.7887353309813 -276 1468.8092271185735
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box311
+Translation -339.266476169346 -276 1471.7522420891546
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box312
+Translation -273.1272747718347 -276 1468.0602763121412
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box313
+Translation -204.5756439229054 -276 1471.7280072198243
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box314
+Translation -131.03925232921915 -276 1473.1070282294272
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box315
+Translation -68.37724236184442 -276 1465.1357892517294
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box316
+Translation -11.229428654524414 -276 1470.7574089299226
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box317
+Translation 58.354035564122015 -276 1470.1435178517636
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box318
+Translation 134.29540558786286 -276 1465.1226955096004
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box319
+Translation 196.30099145222724 -276 1459.588584194883
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box320
+Translation -395.8209480896155 -276 1528.9358062749488
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box321
+Translation -334.55312888934674 -276 1525.6475715856573
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box322
+Translation -263.5763431696282 -276 1538.133877497423
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box323
+Translation -200.0655108630434 -276 1537.7940678467282
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box324
+Translation -142.6087445741883 -276 1535.5647603475234
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box325
+Translation -76.17521709454682 -276 1524.815145355329
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box326
+Translation 2.2510931969878643 -276 1526.5077478051758
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box327
+Translation 69.08290592027438 -276 1534.1862271112368
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box328
+Translation 127.98631424560264 -276 1535.2126848256155
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box329
+Translation 194.90150811565331 -276 1530.5851980036232
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box330
+Translation -395.508424109517 -276 1591.0557451740256
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box331
+Translation -328.76083341695147 -276 1603.6850257799713
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box332
+Translation -266.2631418731876 -276 1598.4992048480663
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box333
+Translation -200.60420564906954 -276 1591.9140282756375
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box334
+Translation -142.44963275804295 -276 1600.2134134267255
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box335
+Translation -67.90473142133564 -276 1599.137652338474
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box336
+Translation -1.9958948470316633 -276 1599.807807943465
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box337
+Translation 60.784552947488464 -276 1593.784029727317
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box338
+Translation 124.32688152168821 -276 1600.2325139889101
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box339
+Translation 189.0164385952296 -276 1590.5016560264992
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box340
+Translation -397.7186792626824 -276 1656.6696545003217
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box341
+Translation -328.0580062705728 -276 1667.6526620183504
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box342
+Translation -273.2461730160831 -276 1667.7890197844722
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box343
+Translation -202.45722502225564 -276 1661.2995503502286
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box344
+Translation -131.12567100906014 -276 1670.1174777674519
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box345
+Translation -74.14211648754537 -276 1666.147669232693
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box346
+Translation -3.9632532189773335 -276 1663.6840058786383
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box347
+Translation 64.3711000584727 -276 1664.2976101744464
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box348
+Translation 125.8183690989486 -276 1665.4115867940557
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box349
+Translation 197.49398486136346 -276 1660.0670679672974
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box350
+Translation -404.0758272981228 -276 1728.4828269944137
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box351
+Translation -327.1631691242942 -276 1731.99965062316
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box352
+Translation -263.6127866605359 -276 1736.73590694173
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box353
+Translation -198.48740206439555 -276 1729.5187893270465
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box354
+Translation -134.19142025040367 -276 1733.1511051750022
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box355
+Translation -69.01969549223308 -276 1725.8006197499687
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box356
+Translation 2.717760638594303 -276 1728.320192408489
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box357
+Translation 65.85890451468659 -276 1729.4173749927909
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box358
+Translation 135.31062031594158 -276 1736.1405831013276
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box359
+Translation 194.25525769439642 -276 1731.0292819334502
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box360
+Translation -407.17800391427306 -276 1793.3575654006463
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box361
+Translation -333.9552591827972 -276 1801.476624926258
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box362
+Translation -272.93506339643704 -276 1791.9209378728533
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box363
+Translation -197.75442632943773 -276 1799.6841901792689
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box364
+Translation -141.91327321938772 -276 1790.8006032934616
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box365
+Translation -62.636337916085935 -276 1802.6211239931768
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box366
+Translation 2.22604646859466 -276 1797.1131541543696
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box367
+Translation 61.865874210642964 -276 1792.0458771222561
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box368
+Translation 125.36646752821034 -276 1788.8401068097457
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box369
+Translation 189.24309903659298 -276 1796.7948013462483
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box370
+Translation -395.85479384300874 -276 1862.894287890007
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box371
+Translation -328.5872703468452 -276 1858.8467100391192
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box372
+Translation -261.3207981407704 -276 1856.3355821161356
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box373
+Translation -203.8489584372211 -276 1862.163645627291
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box374
+Translation -132.25207601904742 -276 1860.312407718788
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box375
+Translation -67.9953557181616 -276 1860.8639461552314
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box376
+Translation -1.062565597521285 -276 1866.908457923585
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box377
+Translation 61.42683864913169 -276 1858.3026880607858
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box378
+Translation 127.37042046234414 -276 1865.32658805798
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box379
+Translation 191.6313687390213 -276 1866.7834627602522
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box380
+Translation -394.77831817884146 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box381
+Translation -336.486999542888 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box382
+Translation -266.4577057098063 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box383
+Translation -200.76330520854788 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box384
+Translation -134.7113692437887 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box385
+Translation -66.84257510902489 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box386
+Translation -11.274937456879384 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box387
+Translation 65.28494146327625 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box388
+Translation 125.07144472982519 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box389
+Translation 195.75700835175937 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box390
+Translation -395.8991917217995 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box391
+Translation -337.0864082492916 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box392
+Translation -267.0093248988259 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box393
+Translation -202.0427666044175 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box394
+Translation -140.5034541489666 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box395
+Translation -67.48599377348418 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box396
+Translation -1.4621011966705195 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box397
+Translation 60.09587191279464 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box398
+Translation 131.99216891020785 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Model
+Model Box399
+Translation 192.0958464569751 -276 1900
+
+Plane BoxPlane1 White
+N 0 1 0
+P 30 30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane2 White
+N 0 -1 0
+P 30 -30 0
+U -60 0 0
+V 0 0 -60
+
+Plane BoxPlane3 White
+N 1 0 0
+P 30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane4 White
+N -1 0 0
+P -30 -30 0
+U 0 60 0
+V 0 0 -60
+
+Plane BoxPlane5 White
+N 0 0 1
+P 0 -30 30
+U 60 0 0
+V 0 60 0
+
+Plane BoxPlane6 White
+N 0 0 -1
+P 0 -30 -30
+U 60 0 0
+V 0 60 0
+
+End
+
+Begin Light
+Area TopLight
+IRV 95.6768 77.1328 62.1616
+P 120 550 2176
+U -240 0 0
+V 0 0 -240
+End
